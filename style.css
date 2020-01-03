@@ -1,12 +1,9 @@
-html{
-  scroll-behavior: smooth;
-}
-
 html, body {
   margin: 0 0;
   height: 100%;
   width: auto;
   overflow-x:hidden;
+  scroll-behavior: smooth; 
 }
 
 
