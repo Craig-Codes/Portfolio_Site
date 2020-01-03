@@ -1,14 +1,14 @@
-html {
+html{
   scroll-behavior: smooth;
 }
 
-html,
-body {
+html, body {
+  margin: 0 0;
   height: 100%;
-  width: 100%;
-  margin: 0;
+  width: auto;
   overflow-x:hidden;
 }
+
 
 .full-height {
   height: 100%;
@@ -19,17 +19,17 @@ body {
   background: #20202c;
   color: white;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h1{
   font-size: 3.5rem;
   margin-bottom: 10%;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+a{
+  color:white;
+  text-decoration:none;
 }
 
 /* NAV */
@@ -43,6 +43,7 @@ a {
   height: 50px;
   z-index: 10;
   background: rgba(0, 0, 0, 0.5);
+  
 }
 
 .logo  i{
@@ -63,29 +64,32 @@ a {
   padding-right: 2vw;
 }
 
+
+
 .nav-list a {
   display: block;
   font-size: 1.25rem;
   padding: 1.25rem;
+  
 }
 
 .nav-list a:hover {
-  color: #9dd9f3;
+  color: #9DD9F3;
 }
 
 .nav-list a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  color: #9dd9f3;
-  background: #9dd9f3;
-  transition: width 0.3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+  color: #9DD9F3;
+    background: #9DD9F3;
+    transition: width .3s;
 }
 
 .nav-list a:hover::after {
-  width: 100%;
-  transition: width 0.3s;
+    width: 100%;
+    transition: width .3s;
 }
 
 .nav-list #nav-about:hover {
@@ -93,18 +97,18 @@ a {
 }
 
 .nav-list #nav-about::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
   color: #b2d3eb;
-  background: #b2d3eb;
-  transition: width 0.3s;
+    background: #b2d3eb;
+    transition: width .3s;
 }
 
 .nav-list #nav-about:hover::after {
-  width: 100%;
-  transition: width 0.3s;
+    width: 100%;
+    transition: width .3s;
 }
 
 .nav-list #nav-projects:hover {
@@ -112,18 +116,18 @@ a {
 }
 
 .nav-list #nav-projects::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
   color: #8dbdd8;
-  background: #8dbdd8;
-  transition: width 0.3s;
+    background: #8dbdd8;
+    transition: width .3s;
 }
 
 .nav-list #nav-projects:hover::after {
-  width: 100%;
-  transition: width 0.3s;
+    width: 100%;
+    transition: width .3s;
 }
 
 .nav-list #nav-tech:hover {
@@ -131,18 +135,18 @@ a {
 }
 
 .nav-list #nav-tech::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
   color: #68a7ca;
-  background: #68a7ca;
-  transition: width 0.3s;
+    background: #68a7ca;
+    transition: width .3s;
 }
 
 .nav-list #nav-tech:hover::after {
-  width: 100%;
-  transition: width 0.3s;
+    width: 100%;
+    transition: width .3s;
 }
 
 .nav-list #nav-contact:hover {
@@ -150,25 +154,25 @@ a {
 }
 
 .nav-list #nav-contact::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
   color: #4390bc;
-  background: #4390bc;
-  transition: width 0.3s;
+    background: #4390bc;
+    transition: width .3s;
 }
 
 .nav-list #nav-contact:hover::after {
-  width: 100%;
-  transition: width 0.3s;
+    width: 100%;
+    transition: width .3s;
 }
 
 /* Introduction Page */
 
-.page-container {
+.page-container{
   min-height: 100%;
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -176,13 +180,13 @@ a {
 
 .container {
   justify-content: center;
-  white-space: nowrap;
+  white-space:nowrap;
 }
 
-.common-links {
-  display: flex;
+.common-links{
+  display:flex;
   flex-direction: row;
-  color: white;
+  color:white;
   padding-top: 5.5%;
   width: 30%;
   font-size: 2.25rem;
@@ -191,38 +195,31 @@ a {
 
 .typewriter h2 {
   font-size: 2rem;
-  color: #b2d3eb;
+  color:  #b2d3eb;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #b2d3eb; /* The typwriter cursor */
+  border-right: .15em solid #b2d3eb; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.25em; /* Adjust as needed */
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  letter-spacing: .25em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from { width: 0 }
+  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #add8e6;
-  }
+  from, to { border-color: transparent }
+  50% { border-color: #add8e6; }
 }
 
-.expand:hover {
-  transform: scale(1.5);
+.expand:hover{
+  transform:scale(1.5);
   transition: 0.5s;
   cursor: hand;
 }
@@ -275,7 +272,7 @@ a {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  bottom: 100%; /* At the top of the tooltip */
+  bottom: 100%;  /* At the top of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -284,46 +281,51 @@ a {
 }
 
 /* About Page */
-.page-container-row {
+.page-container-row{
   min-height: 100%;
-
-  display: flex;
+  
+  display:flex;
   align-items: center;
   align-contents: center;
   flex-direction: row;
-  flex-wrap: wrap;
+   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-#columnOne {
+#columnOne{
   width: 50%;
   padding-left: 5%;
+  
 }
 
-#columnTwo {
+#columnTwo{
   width: 25%;
   padding-right: 5%;
 }
 
-#columnTwo img {
+#columnTwo img{
   height: 80%;
   width: 80%;
+
 }
 
-#columnOne h2 {
+#columnOne h2{
+ 
   border-bottom: solid 2px #b2d3eb;
 }
 
-.page-container-row h3 {
-  text-align: left;
-}
 
-.page-container-row p {
-  margin-left: 2vw;
-}
+.page-container-row h3{
+  text-align: left;
+  }
+
+.page-container-row p{
+    margin-left: 2vw;
+  
+  }
 /* Projects Page */
 
-.project-text {
+.project-text{
   width: 60%;
   color: white;
   align-items: center;
@@ -334,87 +336,88 @@ a {
   font-size: 1rem;
 }
 
-.project-text h2 {
-  border-bottom: solid 2px #8dbdd8;
+.project-text h2{
+    border-bottom: solid 2px #8dbdd8;
   text-align: center;
   font-size: 1.6rem;
 }
 
-.project-text h3 {
+.project-text h3{
   font-size: 1rem;
 }
 
-.card-container {
+.card-container{
   display: flex;
-  justify-content: space-between;
+   justify-content: space-between;
   flex-wrap: wrap;
-  width: 90%;
+  width:90%;
   height: auto;
 }
 
-.cards {
+.cards{
   padding: 0.5%;
-  background-color: #17141d;
+  background-color:#17141d;
   border-radius: 5px;
   margin-bottom: 1%;
-  transition: 0.4s ease-out;
+ transition: 0.4s ease-out;
   position: relative;
   left: 0px;
-  -moz-box-shadow: 1px 1px 2px 2px #000;
+   -moz-box-shadow:    1px 1px 2px 2px #000;
   -webkit-box-shadow: 1px 1px 2px 2px #000;
-  box-shadow: 1px 1px 2px 2px #000;
+  box-shadow:         1px 1px 2px 2px #000;
+  
 }
 
-.cards h3 {
+.cards h3{
   font-size: 0.9rem;
   text-transform: uppercase;
-  display: inline-block;
+  display:inline-block;
   float: left;
 }
 
-.cards p {
+.cards p{
   display: block;
   margin-top: 48px;
   font-size: 0.9rem;
 }
 
-.cards a {
+.cards a{
   color: #8dbdd8;
 }
 
-.technology-badges {
+.technology-badges{
   display: flex;
   margin-right: 20%;
   margin-left: 20%;
   margin-top: 20px;
   align-items: center;
   justify-content: center;
-  justify-content: space-around;
+  justify-content:space-around;
   font-size: 1.8rem;
 }
 
-#align-right {
-  float: right;
-  display: inline-block;
+#align-right{
+  float:right;
+ display: inline-block;
   font-size: 1.6rem;
-  text-align: right;
+  text-align: right; 
 }
 
-#align-right i {
+#align-right i{
   margin-right: 10px;
 }
 
-#align-right i:hover {
+#align-right i:hover{
   transform: scale(1.4);
   transition: 0.4s;
 }
 
-.cards:hover {
+.cards:hover{
   transform: translateY(-5%);
   transition: 0.4s ease-out;
-  -moz-box-shadow: 1px 4px 8px 4px #000;
+   -moz-box-shadow:    1px 4px 8px 4px #000;
   -webkit-box-shadow: 1px 4px 8px 4px #000;
-  box-shadow: 1px 4px 8px 4px #000;
+  box-shadow:         1px 4px 8px 4px #000;
 }
 
 .card-bar {
@@ -433,57 +436,59 @@ a {
 
 .cards:hover .empty-card-bar {
   width: 120%;
-  background-color: #81b1d5;
+  background-color: #81B1D5;
   transition: 0.6s ease-out;
 }
 
+
 /* Technologies Page */
 
-.project-text #yellow-underline {
-  border-bottom: solid 2px #528aae;
+.project-text #yellow-underline{
+  border-bottom: solid 2px #528AAE;
   margin-top: 31px;
 }
 
-.carousel-container {
-  width: 80%;
+.carousel-container{
+width: 80%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content:center; 
   flex-wrap: wrap;
 }
 
-.carousel-cards {
-  display: flex;
+.carousel-cards{
+   display: flex;
   height: 195px;
   width: 150px;
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem 8px #000;
-  /*   margin-left: -50px; */
+/*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
-  left: 0px;
+  left: 0px; 
+ 
 }
 
-.carousel-cards h3 {
+.carousel-cards h3{
   margin-left: 5%;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
 
-.carousel-cards i {
+.carousel-cards i{
   display: block;
-  color: #68a7ca;
+  color:#68a7ca;
   font-size: 7rem;
   margin-top: 15px;
-  margin-left: 13px;
+  margin-left: 13px;  
 }
 
-#unity-correction {
+#unity-correction{
   margin-left: 3px;
 }
 
-#adobe-correction {
+#adobe-correction{
   margin-left: 8px;
 }
 
@@ -512,18 +517,20 @@ a {
   height: 100%;
 }
 
+
 .carousel-cards:hover .emptybar {
   width: 80%;
-  background-color: #528aae;
+  background-color: #528AAE;
   transition: 0.4s ease-out;
 }
 
 /* Contacts Page */
 
 .contact-card {
+
   display: flex;
   flex-wrap: wrap;
-  width: 35%;
+  width:35%;
   height: 350px;
   margin-top: 5%;
   perspective: 500px;
@@ -533,14 +540,14 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 
   transition: transform 1s;
   transform-style: preserve-3d;
 }
 
 .contact-card:hover .content {
-  transform: rotateY(180deg);
+  transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
 
@@ -556,19 +563,21 @@ a {
   border-radius: 5px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -moz-box-shadow: 1px 1px 2px 2px #000;
+  -moz-box-shadow:1px 1px 2px 2px #000;
   -webkit-box-shadow: 1px 1px 2px 2px #000;
   box-shadow: 1px 1px 2px 2px #000;
+  
+  
 }
 
-#contact-front {
-  position: absolute;
+#contact-front{
+ position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50% , -50%);
   -webkit-transform: translate(-50%, -50%);
   width: 45%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.75rem;
   color: white;
@@ -578,7 +587,7 @@ a {
   border: 2px #4390bc solid;
   text-align: center;
 
-  backface-visibility: hidden;
+backface-visibility: hidden;
 }
 
 .back {
@@ -586,202 +595,213 @@ a {
   color: white;
   font-size: 0.9rem;
   text-transform: uppercase;
-  transform: rotateY(180deg);
+  transform: rotateY( 180deg );
 }
 
-.back h3 {
+.back h3{
   font-weight: 200;
   letter-spacing: 0.25rem;
   text-align: left;
   color: black;
   padding-top: 3%;
   padding-left: 5%;
-  margin-bottom: 0;
+  margin-bottom:0;
 }
 
-.job {
+.job{
   letter-spacing: 0.25rem;
   text-align: left;
   padding-left: 5%;
   padding-top: 0;
 }
 
-.info {
+.info{
   margin-top: 20%;
-  letter-spacing: 0.25rem;
+    letter-spacing: 0.25rem;
   text-align: left;
   padding-left: 5%;
 }
 
-.info span {
-  color: black;
+.info span{
+  color:black;
 }
 
-.weblinks {
+.weblinks{
   font-size: 1.75rem;
   text-align: right;
   margin-right: 5%;
 }
 
-.weblinks a {
+.weblinks a{
   padding-left: 2%;
 }
 
-footer {
+
+footer{
   width: 100%;
-  margin-top: 35px;
+ margin-top: 35px;
   background: #17141d;
   align-text: left;
-  padding-top: 10px;
+ padding-top: 10px;
   padding-bottom: 10px;
+  margin-left:auto;
+  margin-right: auto;
+
 }
 
-footer div {
-  padding-left: 25px;
+footer div{
+padding-left: 25px;
   color: #b2d3eb;
   font-size: 0.8rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 322px) {
-  body {
-    background: #20202c;
+   body{
+    background:#20202c;
     /* #16161d */
     /* #100e17 */
   }
+  
+    h1{
+    font-size:1.7rem;
+  }
+  
+      .nav-list a {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+  
+    .logo  i{
+    font-size:0.9rem;
+  }
+  
+   .typewriter h2 {
+  font-size: 1.1rem;
+  }
+  
+    .common-links{
+    width:45%;
+      font-size: 1.4rem;
+  }
+  
+     #columnOne{
+  width: 85%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 25px;
+  
+}
 
-  h1 {
-    font-size: 1.7rem;
+
+#columnTwo{
+  display:flex;
+  justify-content:center;
+  align-self: start;
+  width: 60%; 
+  padding-right: 0%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+  #columnOne h2{
+ font-size: 1rem;
+}
+
+
+.page-container-row h3{
+  font-size: 0.8rem;
+  text-align: left;
   }
 
-  .nav-list a {
-    font-size: 0.8rem;
-    padding: 0.2rem;
-  }
-
-  .logo i {
-    font-size: 0.9rem;
-  }
-
-  .typewriter h2 {
-    font-size: 1.1rem;
-  }
-
-  .common-links {
-    width: 45%;
-    font-size: 1.4rem;
-  }
-
-  #columnOne {
-    width: 85%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 25px;
-  }
-
-  #columnTwo {
-    display: flex;
-    justify-content: center;
-    align-self: start;
-    width: 60%;
-    padding-right: 0%;
-    padding-top: 10px;
-    padding-bottom: 25px;
-  }
-  #columnOne h2 {
-    font-size: 1rem;
-  }
-
-  .page-container-row h3 {
-    font-size: 0.8rem;
-    text-align: left;
-  }
-
-  .page-container-row p {
+.page-container-row p{
     margin-left: 2vw;
-    font-size: 0.7rem;
+  font-size: 0.7rem
+  
   }
+ 
+  
+   .project-text{
+  font-size: 0.7rem;
+     width: 80%;
+}
 
-  .project-text {
-    font-size: 0.7rem;
-    width: 80%;
+.project-text h2{
+  font-size: 1rem;
+}
+
+.project-text h3{
+  font-size: 0.8rem;
+}
+  
+     .card-bar {
+  top: 40px;
   }
+  
+        .cards h3{
+  font-size: 0.7rem;
+          padding-left: 5px;
+}
 
-  .project-text h2 {
-    font-size: 1rem;
+.cards p{
+  font-size: 0.7rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ 
+
+ .carousel-container{
+width: 90%;
   }
+  
+.carousel-cards{
+  height: 130px;
+  width: 100px;
+  border-radius: 10px;
+}
 
-  .project-text h3 {
-    font-size: 0.8rem;
-  }
+.carousel-cards h3{
+  margin-left: 5%;
+  font-size: 0.7rem;
+}
 
-  .card-bar {
-    top: 40px;
-  }
+.carousel-cards i{
+  font-size: 3.5rem;
+  margin-top: 15px;
+  margin-left: 13px;  
+}
 
-  .cards h3 {
-    font-size: 0.7rem;
-    padding-left: 5px;
-  }
+#unity-correction{
+  margin-left: 3px;
+}
 
-  .cards p {
-    font-size: 0.7rem;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+#adobe-correction{
+  margin-left: 8px;
+}
 
-  .carousel-container {
-    width: 90%;
-  }
-
-  .carousel-cards {
-    height: 130px;
-    width: 100px;
-    border-radius: 10px;
-  }
-
-  .carousel-cards h3 {
-    margin-left: 5%;
-    font-size: 0.7rem;
-  }
-
-  .carousel-cards i {
-    font-size: 3.5rem;
-    margin-top: 15px;
-    margin-left: 13px;
-  }
-
-  #unity-correction {
-    margin-left: 3px;
-  }
-
-  #adobe-correction {
-    margin-left: 8px;
-  }
-
-  .contact-card {
+  
+       .contact-card {
     width: 70%;
-    height: 206px;
+      height:206px;
   }
-
-  #contact-front {
+  
+  #contact-front{
     width: 75%;
     font-size: 0.9rem;
     padding: 5px;
   }
-
-  .back {
+  
+  .back{
     font-size: 0.45rem;
   }
-  .info {
-    margin-top: 25%;
+    .info{
+  margin-top: 25%;
   }
-
-  .weblinks {
-    font-size: 1rem;
+   
+   .weblinks{
+  font-size: 1rem;
   }
-
-  .cards {
+  
+  .cards{
     width: 98%;
     margin-bottom: 5%;
   }
@@ -789,588 +809,622 @@ footer div {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 550px) {
-  body {
-    background: #20202c;
+   body{
+    background:#20202c;
   }
-
-  h1 {
-    font-size: 2.5rem;
+  
+    h1{
+    font-size:2.5rem;
   }
-
-  .nav-list a {
-    font-size: 1rem;
-    padding: 0.7rem;
-    padding-top: 0;
+   
+      .nav-list a {
+  font-size: 1rem;
+  padding: 0.7rem;
+  padding-top: 0;
+}
+  
+    .logo  i{
+    font-size:1.4rem;
   }
-
-  .logo i {
-    font-size: 1.4rem;
-  }
-
+  
   .typewriter h2 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
+  }
+  
+    .common-links{
+    width:30%;
+      font-size: 1.8rem;
+  }
+  
+    #columnOne{
+  width: 80%;
+  padding-left: 0%;
+  padding-right: 0%;
+  
+}
+
+
+#columnTwo{
+  display:flex;
+  justify-content:center;
+  align-self: start;
+  width: 50%; 
+  padding-right: 0%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+  #columnOne h2{
+ font-size: 1.1rem;
+text-align:center;
+}
+
+
+.page-container-row h3{
+  font-size: 0.9rem;
+  text-align: center;
   }
 
-  .common-links {
-    width: 30%;
-    font-size: 1.8rem;
-  }
-
-  #columnOne {
-    width: 80%;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
-  #columnTwo {
-    display: flex;
-    justify-content: center;
-    align-self: start;
-    width: 50%;
-    padding-right: 0%;
-    padding-top: 10px;
-    padding-bottom: 25px;
-  }
-  #columnOne h2 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  .page-container-row h3 {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
-  .page-container-row p {
+.page-container-row p{
     margin-left: 2vw;
-    font-size: 0.8rem;
-    text-align: center;
+  font-size: 0.8rem;
+  text-align: center;
   }
+  
+   .project-text{
+  font-size: 0.8rem;
+}
 
-  .project-text {
-    font-size: 0.8rem;
+.project-text h2{
+  font-size: 1.1rem;
+}
+
+.project-text h3{
+  font-size: 0.9rem;
+}
+  
+     .card-bar {
+  top: 42px;
   }
+  
+      .cards h3{
+  font-size: 0.7rem;
+        padding-left: 0px;
+}
 
-  .project-text h2 {
-    font-size: 1.1rem;
+.cards p{
+  font-size: 0.7rem;
+  padding-left: 0px;
+   padding-left: 0px;
+}
+  
+  
+    .carousel-container{
+width: 90%;
   }
-
-  .project-text h3 {
-    font-size: 0.9rem;
+  
+  .carousel-cards h3{
+  font-size: 0.7rem;
   }
-
-  .card-bar {
-    top: 42px;
-  }
-
-  .cards h3 {
-    font-size: 0.7rem;
-    padding-left: 0px;
-  }
-
-  .cards p {
-    font-size: 0.7rem;
-    padding-left: 0px;
-    padding-left: 0px;
-  }
-
-  .carousel-container {
-    width: 90%;
-  }
-
-  .carousel-cards h3 {
-    font-size: 0.7rem;
-  }
-
-  .contact-card {
+  
+  
+      .contact-card {
     width: 51%;
-    height: 260px;
+      height:260px;
+       
   }
-
-  #contact-front {
+  
+  #contact-front{
     width: 70%;
     font-size: 1rem;
     padding: 10px;
   }
-
-  .back {
-    font-size: x-small;
+  
+  .back{
+    font-size:x-small;
   }
-
-  .info {
-    margin-top: 26%;
+  
+    .info{
+  margin-top: 26%;
   }
-
-  .weblinks {
-    font-size: 1.2rem;
+  
+   .weblinks{
+  font-size: 1.2rem;
   }
-
-  .cards {
+  
+  .cards{
     width: 47%;
     margin-bottom: 3%;
-    padding: 1%;
+      padding: 1%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  body {
-    background: #20202c;
+  body{
+    background:#20202c;
+  }
+  
+    h1{
+    font-size:3rem;
+  }
+  
+    .nav-list a {
+  font-size: 1rem;
+  padding: 0.8rem;
+      padding-top: 0;
+}
+  
+    .logo  i{
+    font-size:1.6rem;
+  }
+  
+   .typewriter h2 {
+  font-size: 1.6rem;
+  }
+  
+    .common-links{
+    width:25%;
+      font-size: 2rem;
+  }
+  
+.page-container-row{
+  min-height: 100%;
+  
+  display:flex;
+  align-items: center;
+  align-contents: center;
+  flex-direction: row;
+   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.page-container-row h3{
+  text-align: left;
   }
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  .nav-list a {
-    font-size: 1rem;
-    padding: 0.8rem;
-    padding-top: 0;
-  }
-
-  .logo i {
-    font-size: 1.6rem;
-  }
-
-  .typewriter h2 {
-    font-size: 1.6rem;
-  }
-
-  .common-links {
-    width: 25%;
-    font-size: 2rem;
-  }
-
-  .page-container-row {
-    min-height: 100%;
-
-    display: flex;
-    align-items: center;
-    align-contents: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .page-container-row h3 {
-    text-align: left;
-  }
-
-  .page-container-row p {
+.page-container-row p{
     margin-left: 2vw;
-    text-align: left;
+  text-align:left;
   }
-
-  #columnOne {
-    width: 45%;
-    padding-left: 5%;
+ 
+  
+  #columnOne{
+  width: 45%;
+  padding-left: 5%;
     padding-top: 0px;
-  }
-
-  #columnOne h2 {
+  
+}
+  
+  #columnOne h2{
     text-align: left;
   }
 
-  #columnTwo {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 45%;
-    padding-right: 5%;
-    padding-top: 0;
-    padding-bottom: 0;
+#columnTwo{
+  display:flex;
+  justify-content:center;
+  align-self:center;
+  width: 45%;
+  padding-right: 5%;
+  padding-top: 0;
+  padding-bottom:0;
+}
+
+  #columnOne h2{
+ font-size: 1.2rem;
+}
+  
+
+
+
+.page-container-row h3{
+  font-size: 1rem;
+  text-align: left;
   }
 
-  #columnOne h2 {
-    font-size: 1.2rem;
-  }
-
-  .page-container-row h3 {
-    font-size: 1rem;
-    text-align: left;
-  }
-
-  .page-container-row p {
+.page-container-row p{
     margin-left: 2vw;
-    font-size: 0.9rem;
+  font-size: 0.9rem
+  
   }
+  
+   .project-text{
+  font-size: 0.9rem;
+}
 
-  .project-text {
-    font-size: 0.9rem;
+.project-text h2{
+  font-size: 1.2rem;
+}
+
+.project-text h3{
+  font-size: 1rem;
+}
+  
+     .card-bar {
+  top: 46px;
   }
+  
+      .cards h3{
+  font-size: 0.8rem;
+}
 
-  .project-text h2 {
-    font-size: 1.2rem;
-  }
+.cards p{
+  font-size: 0.8rem;
+}
+  
+ 
+.carousel-cards{
+  height: 195px;
+  width: 150px; 
+}
 
-  .project-text h3 {
-    font-size: 1rem;
-  }
+.carousel-cards h3{
+  margin-left: 5%;
+  font-size: 0.8rem;
+}
 
-  .card-bar {
-    top: 46px;
-  }
+.carousel-cards i{
+  font-size: 7rem;
+  margin-top: 15px;
+  margin-left: 13px;  
+}
 
-  .cards h3 {
-    font-size: 0.8rem;
-  }
+#unity-correction{
+  margin-left: 3px;
+}
 
-  .cards p {
-    font-size: 0.8rem;
-  }
+#adobe-correction{
+  margin-left: 8px;
+}
 
-  .carousel-cards {
-    height: 195px;
-    width: 150px;
-  }
-
-  .carousel-cards h3 {
-    margin-left: 5%;
-    font-size: 0.8rem;
-  }
-
-  .carousel-cards i {
-    font-size: 7rem;
-    margin-top: 15px;
-    margin-left: 13px;
-  }
-
-  #unity-correction {
-    margin-left: 3px;
-  }
-
-  #adobe-correction {
-    margin-left: 8px;
-  }
-
-  .contact-card {
+  
+      .contact-card {
     width: 44%;
-    height: 280px;
-    padding-left: 5%;
+      height:280px;
+      padding-left: 5%;
   }
-
-  #contact-front {
+  
+  #contact-front{
     width: 65%;
     font-size: 0.9rem;
     padding: 18px;
   }
-
-  .back {
-    font-size: 0.8rem;
+  
+  .back{
+    font-size:0.8rem;
   }
-
-  .info {
-    margin-top: 19%;
+  
+    .info{
+  margin-top: 19%;
   }
-
-  .weblinks {
-    font-size: 1.4rem;
+  
+  .weblinks{
+  font-size: 1.4rem;
   }
-
-  .cards {
+  
+    .cards{
     width: 47%;
     margin-bottom: 3%;
-    padding: 1%;
+      padding: 1%;
   }
-}
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1050px) {
-  body {
-    background: #20202c;
+  
+  body{
+    background:#20202c;
   }
-
-  h1 {
-    font-size: 3.25rem;
+  
+    h1{
+    font-size:3.25rem;
   }
-
+  
   .nav-list a {
-    font-size: 1rem;
-    padding: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
     padding-top: 0;
+}
+   .logo  i{
+    font-size:1.8rem;
   }
-  .logo i {
-    font-size: 1.8rem;
+  
+   .typewriter h2 {
+  font-size: 1.8rem;
+  }
+  
+   .common-links{
+    width:25%;
+      font-size: 2.25rem;
+  }
+  
+  #columnOne{
+  width: 50%;
+  padding-left: 5%;
+  
+}
+
+#columnTwo{
+    display:flex;
+  justify-content:center;
+  width: 32%;
+  padding-right: 5%;
+}
+  
+  #columnOne h2{
+ font-size: 1.4rem;
+}
+
+
+.page-container-row h3{
+  font-size: 1rem;
+  text-align: left;
   }
 
-  .typewriter h2 {
-    font-size: 1.8rem;
-  }
-
-  .common-links {
-    width: 25%;
-    font-size: 2.25rem;
-  }
-
-  #columnOne {
-    width: 50%;
-    padding-left: 5%;
-  }
-
-  #columnTwo {
-    display: flex;
-    justify-content: center;
-    width: 32%;
-    padding-right: 5%;
-  }
-
-  #columnOne h2 {
-    font-size: 1.4rem;
-  }
-
-  .page-container-row h3 {
-    font-size: 1rem;
-    text-align: left;
-  }
-
-  .page-container-row p {
+.page-container-row p{
     margin-left: 2vw;
-    font-size: 0.9rem;
+  font-size: 0.9rem
+  
   }
+  
+   .project-text{
+  font-size: 0.9rem;
+      width: 70%;
+}
 
-  .project-text {
-    font-size: 0.9rem;
-    width: 70%;
+.project-text h2{
+  font-size: 1.4rem;
+}
+
+.project-text h3{
+  font-size: 1rem;
+}
+  
+    .card-bar {
+  top: 50px;
   }
-
-  .project-text h2 {
-    font-size: 1.4rem;
+  
+  
+  .carousel-container{
+width: 80%;
   }
-
-  .project-text h3 {
-    font-size: 1rem;
-  }
-
-  .card-bar {
-    top: 50px;
-  }
-
-  .carousel-container {
-    width: 80%;
-  }
-
+  
+ 
+  
   .contact-card {
     width: 45%;
-    height: 300px;
+    height:300px;
     font-size: 2rem;
     padding: 30px;
   }
-  .back {
+   .back{
+    font-size:1rem;
+  }
+  
+   #contact-front{
     font-size: 1rem;
   }
-
-  #contact-front {
-    font-size: 1rem;
+  
+  .info{
+  margin-top: 23%;
   }
-
-  .info {
-    margin-top: 23%;
+  
+.weblinks{
+  font-size: 1.6rem;
   }
-
-  .weblinks {
-    font-size: 1.6rem;
-  }
-  .cards {
+    .cards{
     width: 30%;
     margin-bottom: 2%;
-    padding: 1%;
+       padding: 1%;
   }
-}
+} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  body {
-    background: #20202c;
+  body{
+    background:#20202c;
+  }
+  
+   h1{
+    font-size:3.5rem;
+  }
+  
+  
+.nav-list a {
+  display: block;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  padding-top: 0;
+}
+  
+  .logo  i{
+    font-size:2rem;
+  }
+  
+    .typewriter h2 {
+  font-size: 2rem;
+  }
+  
+   .common-links{
+    width:25%;
+      font-size: 2.25rem;
+  }
+  
+ #columnOne{
+  width: 54%;
+  padding-left: 5%;
+  
+}
+
+#columnTwo{
+    display:flex;
+  justify-content:center;
+  width: 28%;
+  padding-right: 5%;
+}
+  #columnOne h2{
+ font-size: 1.5rem;
+}
+
+
+.page-container-row h3{
+  font-size: 1.1rem;
+  text-align: left;
   }
 
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  .nav-list a {
-    display: block;
-    font-size: 1.25rem;
-    padding: 1.25rem;
-    padding-top: 0;
-  }
-
-  .logo i {
-    font-size: 2rem;
-  }
-
-  .typewriter h2 {
-    font-size: 2rem;
-  }
-
-  .common-links {
-    width: 25%;
-    font-size: 2.25rem;
-  }
-
-  #columnOne {
-    width: 54%;
-    padding-left: 5%;
-  }
-
-  #columnTwo {
-    display: flex;
-    justify-content: center;
-    width: 28%;
-    padding-right: 5%;
-  }
-  #columnOne h2 {
-    font-size: 1.5rem;
-  }
-
-  .page-container-row h3 {
-    font-size: 1.1rem;
-    text-align: left;
-  }
-
-  .page-container-row p {
+.page-container-row p{
     margin-left: 2vw;
-    font-size: 1.1rem;
+  font-size: 1.1rem
+  
   }
-  .project-text {
-    font-size: 1.1rem;
-    width: 60%;
-  }
+   .project-text{
+  font-size: 1.1rem;
+      width: 60%;
+}
 
-  .project-text h2 {
-    font-size: 1.5rem;
-  }
+.project-text h2{
+  font-size: 1.5rem;
+}
 
-  .project-text h3 {
-    font-size: 1.1rem;
-  }
-
+.project-text h3{
+  font-size: 1.1rem;
+}
+  
   .card-bar {
-    top: 55px;
+  top: 55px;
   }
+  
+  .cards h3{
+  font-size: 0.9rem;
+}
 
-  .cards h3 {
-    font-size: 0.9rem;
+.cards p{
+  font-size: 0.9rem;
+}
+  
+  
+.carousel-cards h3{
+  font-size: 0.9rem;
   }
-
-  .cards p {
-    font-size: 0.9rem;
-  }
-
-  .carousel-cards h3 {
-    font-size: 0.9rem;
-  }
-
-  .contact-card {
+  
+   .contact-card {
     width: 41%;
-    height: 315px;
+     height:315px;
   }
-
-  .info {
-    margin-top: 24%;
+  
+    .info{
+  margin-top: 24%;
   }
-
-  .back {
-    font-size: 0.9rem;
+  
+   .back{
+    font-size:0.9rem;
   }
-
-  .weblinks {
-    font-size: 1.8rem;
+  
+  .weblinks{
+  font-size: 1.8rem;
   }
-
-  .cards {
+  
+     .cards{
     width: 30%;
     margin-bottom: 2%;
-    padding: 1%;
+        padding: 1%;
   }
+  
+  
 }
 
 @media only screen and (min-width: 1450px) {
-  body {
-    background: #20202c;
-
+  body{
+    background:#20202c;
+    
     /* #16161d */
     /* #100e17 */
   }
-
-  h1 {
-    font-size: 3.5rem;
+  
+  h1{
+    font-size:3.5rem;
   }
-
-  .nav-list a {
-    display: block;
-    font-size: 1.25rem;
-    padding: 1.25rem;
-    padding-top: 0;
+  
+.nav-list a {
+  display: block;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  padding-top: 0;
+}
+  
+  .logo  i{
+    font-size:2rem;
   }
-
-  .logo i {
-    font-size: 2rem;
+  
+    .typewriter h2 {
+  font-size: 2.2rem;
   }
-
-  .typewriter h2 {
-    font-size: 2.2rem;
-  }
-
-  .common-links {
-    width: 25%;
+  
+  .common-links{
+    width:25%;
     font-size: 2.25rem;
   }
+  
+  #columnOne{
+  width: 50%;
+  padding-left: 5%;
+  
+}
 
-  #columnOne {
-    width: 50%;
-    padding-left: 5%;
+#columnTwo{
+  width: 25%;
+  padding-right: 5%;
+}
+  #columnOne h2{
+ font-size: 1.6rem;
+}
+
+
+.page-container-row h3{
+  font-size: 1.1rem;
+  text-align: left;
   }
 
-  #columnTwo {
-    width: 25%;
-    padding-right: 5%;
-  }
-  #columnOne h2 {
-    font-size: 1.6rem;
-  }
-
-  .page-container-row h3 {
-    font-size: 1.1rem;
-    text-align: left;
-  }
-
-  .page-container-row p {
+.page-container-row p{
     margin-left: 2vw;
-    font-size: 1rem;
+  font-size: 1rem
+  
   }
+  
+ .project-text{
+  font-size: 1rem;
+}
 
-  .project-text {
-    font-size: 1rem;
-  }
+.project-text h2{
+  font-size: 1.6rem;
+}
 
-  .project-text h2 {
-    font-size: 1.6rem;
-  }
-
-  .project-text h3 {
-    font-size: 1.1rem;
-  }
-
-  .contact-card {
+.project-text h3{
+  font-size: 1.1rem;
+}
+  
+  
+   .contact-card {
     width: 34%;
-    height: 350px;
+     height:350px;
   }
-
-  .back {
-    font-size: 1rem;
+  
+   .back{
+    font-size:1rem;
   }
-
-  .info {
-    margin-top: 24%;
+  
+    .info{
+  margin-top: 24%;
   }
-
-  .weblinks {
-    font-size: 1.8rem;
+  
+  .weblinks{
+  font-size: 1.8rem;
   }
-
-  .cards {
+  
+     .cards{
     width: 30%;
     margin-bottom: 2%;
-    padding: 1%;
+        padding: 1%;
   }
+  
+  
 }
