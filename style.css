@@ -652,7 +652,7 @@ padding-left: 25px;
   font-size: 0.8rem;
 }
 
-#my-div { display:block !important; }
+#loadOverlay{display: none;}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 322px) {
