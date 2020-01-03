@@ -936,10 +936,10 @@ width: 90%;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up - ipad mini 5 both ways) */
 @media only screen and (min-width: 768px) {
   body{
-    background:red;
+    background:#20202c;
   }
   
     h1{
