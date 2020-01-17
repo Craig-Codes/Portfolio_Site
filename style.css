@@ -5,7 +5,7 @@ html, body {
   overflow-x:hidden;
   scroll-behavior: smooth; 
   -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
+  overscroll-behavior: unset;
 }
 
 
