@@ -1,8 +1,12 @@
+html{
+  overflow: hidden;
+}
+
 html, body {
   margin: 0 0;
   height: 100%;
   width: auto;
-
+overflow-x: hidden;
   scroll-behavior: smooth; 
   -webkit-overflow-scrolling: touch;
   
@@ -18,9 +22,7 @@ body {
   background: #20202c;
   color: white;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  position: fixed;
-   
+  font-family: 'Montserrat', sans-serif;   
 }
 
 h1{
