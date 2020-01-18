@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   width: auto;
   overflow-x:hidden;
+  overflow-y: hidden;
   scroll-behavior: smooth; 
   -webkit-overflow-scrolling: touch;
   
@@ -19,6 +20,7 @@ body {
   color: white;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
+  overflow:auto;
 }
 
 h1{
