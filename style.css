@@ -4,8 +4,6 @@ html, body {
   width: auto;
   overflow-x:hidden;
   scroll-behavior: smooth; 
-  -webkit-overflow-scrolling: touch;
-  
 }
 
 
