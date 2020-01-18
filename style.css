@@ -343,6 +343,7 @@ a{
 
 .project-text h3{
   font-size: 1rem;
+  margin-bottom: 2px;
 }
 
 .card-container{
@@ -389,6 +390,7 @@ a{
   margin-right: 20%;
   margin-left: 20%;
   margin-top: 20px;
+  margin-bottom: 5px;
   align-items: center;
   justify-content: center;
   justify-content:space-around;
