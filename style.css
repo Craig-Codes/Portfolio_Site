@@ -20,7 +20,7 @@ body {
   color: white;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-  overflow:auto;
+  overflow:hidden;
 }
 
 h1{
