@@ -708,17 +708,19 @@ padding-left: 25px;
 }
   #columnOne h2{
  font-size: 1rem;
+ text-align: center;
 }
 
 
 .page-container-row h3{
   font-size: 0.8rem;
-  text-align: left;
+  text-align: center;
   }
 
 .page-container-row p{
     margin-left: 2vw;
   font-size: 0.7rem
+  text-align: center;
   
   }
  
