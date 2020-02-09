@@ -377,6 +377,7 @@ a {
   font-size: 0.9rem;
   text-transform: uppercase;
   display: inline-block;
+  float: left;
 }
 
 .cards p {
@@ -406,6 +407,7 @@ a {
 }
 
 #align-right {
+  float: right;
   display: inline-block;
   font-size: 1.6rem;
   text-align: right;
@@ -532,15 +534,6 @@ a {
 
 /* Contacts Page */
 
-.contact-card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 35%;
-  height: 350px;
-  margin-top: 5%;
-  perspective: 500px;
-}
-
 #contact {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.4),
@@ -550,6 +543,15 @@ a {
   background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+  height: 350px;
+  margin-top: 5%;
+  perspective: 500px;
 }
 
 .content {
@@ -600,7 +602,6 @@ a {
   padding: 30px;
   border: 2px solid grey;
   text-align: center;
-
   backface-visibility: hidden;
 }
 
@@ -964,6 +965,7 @@ footer div {
 
     display: flex;
     align-items: center;
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
