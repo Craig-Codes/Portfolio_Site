@@ -377,7 +377,6 @@ a {
   font-size: 0.9rem;
   text-transform: uppercase;
   display: inline-block;
-  float: left;
 }
 
 .cards p {
@@ -407,7 +406,6 @@ a {
 }
 
 #align-right {
-  float: right;
   display: inline-block;
   font-size: 1.6rem;
   text-align: right;
@@ -966,7 +964,6 @@ footer div {
 
     display: flex;
     align-items: center;
-    align-contents: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
