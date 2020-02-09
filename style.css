@@ -569,8 +569,8 @@ a {
 
 #contact {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
     ),
     url(imgs/contact.jpeg);
   background-size: cover;
