@@ -554,6 +554,7 @@ a {
   background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  z-index: -1;
 }
 
 .contact-card {
