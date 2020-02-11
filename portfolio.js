@@ -30,3 +30,48 @@ function closeNav() {
   openNavButton.style.display = "flex";
   clicked = false;
 }
+
+// Code to deal with knowing when a div is in the viewport to trigger a CSS Keyframe animation. Uses the jquery library to help out.
+
+function isOnScreen(element) {
+  var curPos = element.offset();
+  var curTop = curPos.top;
+  var screenHeight = $(window).height();
+  return curTop > screenHeight ? false : true;
+}
+
+setInterval(animateOnView, 500);
+
+function animateOnView() {
+  if (isOnScreen($("#about-underline"))) {
+    console.log("on screen");
+    $("#about-underline").animate(
+      {
+        width: "100%"
+      },
+      "slow"
+    );
+  }
+  if (isOnScreen($("#project-underline"))) {
+    console.log("on screen");
+    $("#project-underline").animate(
+      {
+        width: "100%"
+      },
+      "slow"
+    );
+  }
+  if (isOnScreen($("#tech-underline"))) {
+    console.log("on screen");
+    $("#tech-underline").animate(
+      {
+        width: "100%"
+      },
+      "slow"
+    );
+  }
+  if (isOnScreen($("#columnTwo img"))) {
+    console.log("on screen");
+    $("#columnTwo img").animate({ width: "100%" }, "slow");
+  }
+}

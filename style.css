@@ -14,6 +14,7 @@ body {
 }
 
 body {
+  height: 100%;
   background: #f2f5f5;
   color: #000000;
   justify-content: center;
@@ -268,13 +269,23 @@ a {
 
 #columnTwo img {
   height: 80%;
-  width: 80%;
+  width: 0%;
   border: 3px solid grey;
   border-radius: 50%;
 }
 
 #columnOne h2 {
   border-bottom: solid 3px grey;
+  width: 30%;
+}
+
+@keyframes expandWidth {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .page-container-row h3 {
@@ -311,7 +322,13 @@ a {
 .project-text h2 {
   border-bottom: solid 3px grey;
   text-align: center;
+  justify-content: center;
+  width: 30%;
   font-size: 1.6rem;
+}
+
+#project-underline {
+  border-width: 30%;
 }
 
 .project-text h3 {
