@@ -1117,28 +1117,28 @@ footer div {
     text-align: left;
   }
 
-  #columnOne {
-    width: 45%;
-    padding-left: 5%;
-    padding-top: 0px;
-  }
-
   #columnOne h2 {
     text-align: left;
+  }
+
+  #columnOne {
+    width: 80%;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
   #columnTwo {
     display: flex;
     justify-content: center;
-    align-self: center;
-    width: 45%;
-    padding-right: 5%;
-    padding-top: 0;
-    padding-bottom: 0;
+    align-self: start;
+    width: 35%;
+    padding-right: 0%;
+    padding-top: 10px;
+    padding-bottom: 25px;
   }
-
   #columnOne h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-align: center;
   }
 
   .page-container-row h3 {
@@ -1277,15 +1277,23 @@ footer div {
   }
 
   #columnOne {
-    width: 50%;
+    width: 45%;
     padding-left: 5%;
+    padding-top: 0px;
+  }
+
+  #columnOne h2 {
+    text-align: left;
   }
 
   #columnTwo {
     display: flex;
     justify-content: center;
-    width: 32%;
+    align-self: center;
+    width: 30%;
     padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   #columnOne h2 {
@@ -1419,10 +1427,10 @@ footer div {
 
   .page-container-row p {
     margin-left: 2vw;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .project-text {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     width: 60%;
   }
 
