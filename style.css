@@ -8,11 +8,6 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.full-height {
-  height: 100%;
-  background: yellow;
-}
-
 body {
   height: 100%;
   background: #f2f5f5;
@@ -24,11 +19,11 @@ body {
 h1 {
   font-size: 3.5rem;
   margin-bottom: 10%;
-  color: #ffffff;
+  color: #000000;
 }
 
 a {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
 
@@ -129,7 +124,7 @@ a {
 }
 
 .nav-list a:hover:before {
-  content: "\2605";
+  content: "\10697";
   font-weight: bolder;
   margin-left: 32%;
   display: block;
@@ -161,8 +156,8 @@ a {
 }
 
 #introduction {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(imgs/blackWhiteLaptop);
+  position: relative;
+
   background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -173,10 +168,18 @@ a {
   white-space: nowrap;
 }
 
+#particles-js {
+  position: absolute;
+  background-color: #f2f5f5;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
 .container-common-links {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: black;
   padding-top: 5.5%;
   width: 30%;
   font-size: 2.25rem;
@@ -185,15 +188,14 @@ a {
 
 .typewriter h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #000000;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #ffffff; /* The typwriter cursor */
+  border-right: 0.15em solid rgb(0, 0, 0); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.25em; /* Adjust as needed */
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-
 .expand:hover,
 .expand:hover {
   transform: scale(1.5);
@@ -712,7 +714,7 @@ footer div {
     border-color: transparent;
   }
   50% {
-    border-color: #ffffff;
+    border-color: #000000;
   }
 }
 

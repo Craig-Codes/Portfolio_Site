@@ -75,3 +75,10 @@ function animateOnView() {
     $("#columnTwo img").animate({ width: "100%" }, "slow");
   }
 }
+
+// Particle.js landing background
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load("particles-js", "/assets/particles.json", function() {
+  console.log("callback - particles.js config loaded");
+});
