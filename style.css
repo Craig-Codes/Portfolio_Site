@@ -124,7 +124,7 @@ a {
 }
 
 .nav-list a:hover:before {
-  content: "\10697";
+  content: "\2709";
   font-weight: bolder;
   margin-left: 32%;
   display: block;
