@@ -123,8 +123,8 @@ a {
   color: #444;
 }
 
-.nav-list a:hover:before {
-  content: "\2709";
+.nav-list a:hover::before {
+  content: "\29c9";
   font-weight: bolder;
   margin-left: 32%;
   display: block;
@@ -664,6 +664,10 @@ a {
   padding-left: 2%;
 }
 
+.weblinks i {
+  color: white;
+}
+
 footer {
   overscroll-behavior-y: none;
   width: 100%;
@@ -681,7 +685,8 @@ footer div {
   font-size: 0.8rem;
 }
 
-.footer-icon {
+.footer-icon i {
+  color: white;
   float: right;
   font-size: 1.1rem;
 }
@@ -935,7 +940,7 @@ footer div {
   }
 
   .nav-list a:hover:before {
-    content: "\2605";
+    content: "\29c9";
     margin-left: 12%;
   }
 
