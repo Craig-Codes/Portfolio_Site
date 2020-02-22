@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#444",
+      "color": "#696969",
       "opacity": 0.4,
       "width": 1.5
     },
@@ -95,7 +95,7 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 100,
+        "distance": 150,
         "duration": 0.4
       },
       "push": {
