@@ -81,6 +81,7 @@ a {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  -webkit-transition: 0.5s;
   right: 0px; /* align navbar to the right */
 }
 
@@ -215,6 +216,7 @@ a {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.25em; /* Adjust as needed */
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation:typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 .expand:hover,
 .expand:hover {
