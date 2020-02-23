@@ -1636,18 +1636,15 @@ footer div {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-.loader {
-  margin: 25% auto;
-  position: relative;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #loadingDiv {
   position: absolute;
+  display: flex;
   z-index: 999;
   top: 0;
   left: 0;
