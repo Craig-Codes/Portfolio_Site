@@ -214,7 +214,7 @@ a {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.25em; /* Adjust as needed */
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 .expand:hover,
 .expand:hover {
@@ -1628,4 +1628,30 @@ footer div {
   --card-bar-full: grey;
   --card-icons: lightgray;
   --background-gradient-contact: (255, 255, 255, 0.2);
+}
+
+/* Pre-loader */
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.loader {
+  margin: 25% auto;
+  position: relative;
+}
+
+#loadingDiv {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
 }
