@@ -113,8 +113,14 @@ if (
 ) {
   console.log("dark mode");
   darkMode();
+  particlesJS.load("particles-js", "/assets/particles_dark.json", function() {
+    console.log("callback - particles.js config loaded");
+  });
 } else {
   lightMode();
+  particlesJS.load("particles-js", "/assets/particles.json", function() {
+    console.log("callback - particles.js config loaded");
+  });
 }
 
 function lightMode() {
@@ -135,7 +141,11 @@ function lightMode() {
     "--background-gradient-contact",
     "rgba(255, 255, 255, 0.2)"
   );
+  html.style.setProperty("--footer-border", "black");
   closeNav();
+  particlesJS.load("particles-js", "/assets/particles.json", function() {
+    console.log("callback - particles.light.js config loaded");
+  });
 }
 
 function darkMode() {
@@ -146,7 +156,7 @@ function darkMode() {
   html.style.setProperty("--nav-button", "rgba(255, 255, 255, 0.6)");
   html.style.setProperty("--nav-color", "rgba(0, 0, 0, 0.85)");
   html.style.setProperty("--font-weight", "normal");
-  html.style.setProperty("--background-gradient", "rgba(0, 0, 0, 0.87)");
+  html.style.setProperty("--background-gradient", "rgba(0, 0, 0, 0.82)");
   html.style.setProperty("--card-background", "#2d2d2e");
   html.style.setProperty("--projects-shadow", "#1a1110");
   html.style.setProperty("--card-bar-empty", "#444");
@@ -156,5 +166,9 @@ function darkMode() {
     "--background-gradient-contact",
     "rgba(0, 0, 0, 0.65)"
   );
+  html.style.setProperty("--footer-border", "white");
   closeNav();
+  particlesJS.load("particles-js", "/assets/particles_dark.json", function() {
+    console.log("callback - particles.dark.js config loaded");
+  });
 }

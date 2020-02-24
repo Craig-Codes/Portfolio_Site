@@ -126,18 +126,6 @@ a {
 
 .nav-list a:hover {
   color: grey;
-}
-
-.nav-list a:hover::before {
-  content: "\21e8";
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-left: 32%;
-  display: block;
-  width: 0;
-  height: 2px;
-  color: grey;
-  background: #444;
   transition: width 0.3s;
   -webkit-transition: width 0.5s;
 }
@@ -211,12 +199,13 @@ a {
   font-size: 2rem;
   color: var(--text-color);
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid var(--text-color); /* The typwriter cursor */
+  border-right: 0.15em solid var(--text-color); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.25em; /* Adjust as needed */
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-  -webkit-animation:typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 4s steps(40, end),
+    blink-caret 0.75s step-end infinite;
 }
 .expand:hover,
 .expand:hover {
@@ -691,6 +680,7 @@ a {
 }
 
 footer {
+  border-top: 2px solid var(--footer-border);
   overscroll-behavior-y: none;
   width: 100%;
   background: var(--background-color);
@@ -795,11 +785,6 @@ footer div {
 
   .nav-list a {
     font-size: 1rem;
-  }
-
-  .nav-list a:hover:before {
-    content: "";
-    margin-left: 0px;
   }
 
   #nav-icon {
@@ -961,11 +946,6 @@ footer div {
     font-size: 1.1rem;
   }
 
-  .nav-list a:hover:before {
-    content: "\21e8";
-    margin-left: 12%;
-  }
-
   #nav-icon {
     width: 160px;
     height: 160px;
@@ -1104,10 +1084,6 @@ footer div {
     font-size: 1.2rem;
   }
 
-  .nav-list a:hover:before {
-    margin-left: 22%;
-  }
-
   #nav-icon {
     width: 170px;
     height: 170px;
@@ -1128,10 +1104,8 @@ footer div {
 
   .page-container-row {
     min-height: 100%;
-
     display: flex;
     align-items: center;
-
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1283,10 +1257,6 @@ footer div {
     font-size: 1.4rem;
   }
 
-  .nav-list a:hover:before {
-    margin-left: 25%;
-  }
-
   #nav-icon {
     width: 180px;
     height: 180px;
@@ -1412,10 +1382,6 @@ footer div {
     font-size: 1.5rem;
   }
 
-  .nav-list a:hover:before {
-    margin-left: 30%;
-  }
-
   #nav-icon {
     width: 190px;
     height: 190px;
@@ -1534,10 +1500,6 @@ footer div {
     font-size: 1.6rem;
   }
 
-  .nav-list a:hover:before {
-    margin-left: 32%;
-  }
-
   #nav-icon {
     width: 200px;
     height: 200px;
@@ -1630,6 +1592,7 @@ footer div {
   --card-bar-full: grey;
   --card-icons: lightgray;
   --background-gradient-contact: (255, 255, 255, 0.2);
+  --footer-border: #444;
 }
 
 /* Pre-loader */
