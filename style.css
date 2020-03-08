@@ -52,24 +52,15 @@ a {
   font-size: 2rem;
 }
 
-.nav-close-button {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 10;
-  color: var(--white);
-  background: var(--nav-button);
-  top: 0;
-  left: 0;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  margin-top: 2.5%;
-  margin-left: 94%;
-  margin-right: 5%;
-  cursor: pointer;
-  font-size: 2rem;
+/* classes added to nav rotation button to give rotation animation on click */
+.nav-icon-open {
+  transform: rotate(-90deg);
+  transition: transform 350ms linear;
+}
+
+.nav-icon-close {
+  transform: rotate(0deg);
+  transition: transform 350ms linear;
 }
 
 .nav {
@@ -203,9 +194,11 @@ a {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.25em; /* Adjust as needed */
+  animation-delay: 2s;
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
   -webkit-animation: typing 4s steps(40, end),
     blink-caret 0.75s step-end infinite;
+  animation-delay: 750ms; /* Delay the animation a little to account for page loading time */
 }
 .expand:hover,
 .expand:hover {
@@ -355,6 +348,7 @@ a {
   flex-wrap: wrap;
   width: 90%;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .cards {
@@ -387,11 +381,16 @@ a {
 
 .cards a {
   color: var(--card-icons);
+  transition: all 500ms ease;
 }
 
 .cards a:hover,
 .cards a:focus {
   color: grey;
+}
+
+.cards:hover a {
+  color: var(--text-color);
 }
 
 .technology-badges {
@@ -472,6 +471,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .carousel-cards {
@@ -731,7 +731,7 @@ footer div {
     border-color: transparent;
   }
   50% {
-    border-color: var(--text-color);
+    border-color: grey;
   }
 }
 
@@ -741,7 +741,7 @@ footer div {
     border-color: transparent;
   }
   50% {
-    border-color: var(--text-color);
+    border-color: grey;
   }
 }
 
@@ -810,6 +810,7 @@ footer div {
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 25px;
+    text-align: center;
   }
 
   #columnTwo {
@@ -1111,23 +1112,19 @@ footer div {
     justify-content: space-around;
   }
 
-  .page-container-row h3 {
-    text-align: left;
-  }
-
-  .page-container-row p {
-    margin-left: 2vw;
-    text-align: left;
+  #columnOne {
+    text-align: center;
   }
 
   #columnOne h2 {
-    text-align: left;
+    text-align: center;
   }
 
   #columnOne {
     width: 80%;
     padding-left: 0%;
     padding-right: 0%;
+    text-align: center;
   }
 
   #columnTwo {
@@ -1146,7 +1143,6 @@ footer div {
 
   .page-container-row h3 {
     font-size: 1rem;
-    text-align: left;
   }
 
   .page-container-row p {
@@ -1279,9 +1275,10 @@ footer div {
     width: 45%;
     padding-left: 5%;
     padding-top: 0px;
+    text-align: left;
   }
 
-  #columnOne h2 {
+  #columnOne p {
     text-align: left;
   }
 
