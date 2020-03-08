@@ -355,6 +355,7 @@ a {
   flex-wrap: wrap;
   width: 90%;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .cards {
@@ -387,11 +388,16 @@ a {
 
 .cards a {
   color: var(--card-icons);
+  transition: all 1000ms ease;
 }
 
 .cards a:hover,
 .cards a:focus {
   color: grey;
+}
+
+.cards:hover a {
+  color: var(--text-color);
 }
 
 .technology-badges {
@@ -472,6 +478,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .carousel-cards {
@@ -810,6 +817,7 @@ footer div {
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 25px;
+    text-align: center;
   }
 
   #columnTwo {
@@ -1111,23 +1119,19 @@ footer div {
     justify-content: space-around;
   }
 
-  .page-container-row h3 {
-    text-align: left;
-  }
-
-  .page-container-row p {
-    margin-left: 2vw;
-    text-align: left;
+  #columnOne {
+    text-align: center;
   }
 
   #columnOne h2 {
-    text-align: left;
+    text-align: center;
   }
 
   #columnOne {
     width: 80%;
     padding-left: 0%;
     padding-right: 0%;
+    text-align: center;
   }
 
   #columnTwo {
@@ -1146,7 +1150,6 @@ footer div {
 
   .page-container-row h3 {
     font-size: 1rem;
-    text-align: left;
   }
 
   .page-container-row p {
@@ -1279,9 +1282,10 @@ footer div {
     width: 45%;
     padding-left: 5%;
     padding-top: 0px;
+    text-align: left;
   }
 
-  #columnOne h2 {
+  #columnOne p {
     text-align: left;
   }
 

@@ -84,7 +84,7 @@ function animateOnView() {
       "slow"
     );
   }
-  if (isOnScreen($("#columnTwo img"))) {
+  if (isOnScreen($("#about_image"))) {
     console.log("on screen");
     $("#columnTwo img").animate({ width: "100%" }, "slow");
   }
@@ -156,7 +156,7 @@ function darkMode() {
   html.style.setProperty("--nav-button", "rgba(255, 255, 255, 0.6)");
   html.style.setProperty("--nav-color", "rgba(0, 0, 0, 0.85)");
   html.style.setProperty("--font-weight", "normal");
-  html.style.setProperty("--background-gradient", "rgba(0, 0, 0, 0.82)");
+  html.style.setProperty("--background-gradient", "rgba(0, 0, 0, 0.87)");
   html.style.setProperty("--card-background", "#2d2d2e");
   html.style.setProperty("--projects-shadow", "#1a1110");
   html.style.setProperty("--card-bar-empty", "#444");
