@@ -381,7 +381,7 @@ a {
 
 .cards a {
   color: var(--card-icons);
-  transition: all 500ms ease;
+  transition: all 600ms ease;
 }
 
 .cards a:hover,
@@ -391,6 +391,45 @@ a {
 
 .cards:hover a {
   color: var(--text-color);
+}
+
+.cards:hover a i {
+  animation: pulse linear 1s 3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
 }
 
 .technology-badges {
@@ -414,6 +453,7 @@ a {
 
 #align-right i {
   margin-right: 10px;
+  transition: all 600ms ease;
 }
 
 #align-right i:hover,
@@ -442,12 +482,16 @@ a {
   left: 2%;
   height: 1.2%;
   width: 75%;
+  transition: all 700ms;
+  -webkit-transition: all 700ms;
 }
 
 .empty-card-bar {
   background-color: var(--card-bar-empty);
   width: 60%;
   height: 100%;
+  transition: all 700ms;
+  -webkit-transition: all 700ms;
 }
 
 .cards:hover .empty-card-bar,
