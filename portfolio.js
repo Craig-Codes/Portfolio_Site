@@ -16,9 +16,9 @@ let clicked = false;
 
 const openNavButton = document.querySelector(".nav-expand-button");
 const closeNavButton = document.querySelector(".nav-close-button");
+const navIcon = document.querySelector(".nav-icon");
 
 openNavButton.addEventListener("click", navExpand);
-closeNavButton.addEventListener("click", closeNav);
 
 const listButtons = document.querySelectorAll(".nav-link");
 listButtons.forEach(function(btn) {
@@ -29,8 +29,7 @@ function navExpand() {
   if (!clicked) {
     console.log("clicked");
     document.getElementById("navbar").style.width = "50%";
-    openNavButton.style.display = "none";
-    closeNavButton.style.display = "flex";
+    navIcon.className = "nav-expand-button nav-icon nav-icon-open";
     clicked = true;
   } else {
     closeNav();
@@ -40,8 +39,7 @@ function navExpand() {
 
 function closeNav() {
   document.getElementById("navbar").style.width = "0";
-  closeNavButton.style.display = "none";
-  openNavButton.style.display = "flex";
+  navIcon.className = "nav-expand-button nav-icon nav-icon-close";
   clicked = false;
 }
 
@@ -56,9 +54,9 @@ function isOnScreen(element) {
 
 setInterval(animateOnView, 500);
 
+// Functions trigger when certain elements appear in the viewport
 function animateOnView() {
   if (isOnScreen($("#about-underline"))) {
-    console.log("on screen");
     $("#about-underline").animate(
       {
         width: "100%"
@@ -67,7 +65,6 @@ function animateOnView() {
     );
   }
   if (isOnScreen($("#project-underline"))) {
-    console.log("on screen");
     $("#project-underline").animate(
       {
         width: "100%"
@@ -76,7 +73,6 @@ function animateOnView() {
     );
   }
   if (isOnScreen($("#tech-underline"))) {
-    console.log("on screen");
     $("#tech-underline").animate(
       {
         width: "100%"
@@ -85,20 +81,14 @@ function animateOnView() {
     );
   }
   if (isOnScreen($("#about_image"))) {
-    console.log("on screen");
     $("#columnTwo img").animate({ width: "100%" }, "slow");
   }
 }
 
-// Particle.js landing background
-particlesJS.load("particles-js", "/assets/particles.json", function() {
-  console.log("callback - particles.js config loaded");
-});
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-
 // Dealing with theme change between light and dark
 
 const html = document.getElementsByTagName("html")[0];
+const typeWriterText = document.querySelector(".typewriter");
 
 const lightModeButton = document.getElementById("light-mode");
 const darkModeButton = document.getElementById("dark-mode");
@@ -113,18 +103,11 @@ if (
 ) {
   console.log("dark mode");
   darkMode();
-  particlesJS.load("particles-js", "/assets/particles_dark.json", function() {
-    console.log("callback - particles.js config loaded");
-  });
 } else {
   lightMode();
-  particlesJS.load("particles-js", "/assets/particles.json", function() {
-    console.log("callback - particles.js config loaded");
-  });
 }
 
 function lightMode() {
-  console.log("light mode");
   html.style.setProperty("--text-color", "black");
   html.style.setProperty("--background-color", "#f1f1f1");
   html.style.setProperty("--white", "white");
@@ -149,7 +132,6 @@ function lightMode() {
 }
 
 function darkMode() {
-  console.log("dark mode");
   html.style.setProperty("--text-color", "#f1f1f1");
   html.style.setProperty("--background-color", "#1b1b1b");
   html.style.setProperty("--white", "black");
@@ -171,4 +153,5 @@ function darkMode() {
   particlesJS.load("particles-js", "/assets/particles_dark.json", function() {
     console.log("callback - particles.dark.js config loaded");
   });
+  $();
 }
