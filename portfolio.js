@@ -43,6 +43,13 @@ function closeNav() {
   clicked = false;
 }
 
+// Code deals with move down from intro page
+
+const introDown = document.querySelector("#moveDown");
+introDown.addEventListener("click", function() {
+  location.href = "#about-page";
+});
+
 // Code to deal with knowing when a div is in the viewport to trigger a CSS Keyframe animation. Uses the jquery library to help out.
 
 function isOnScreen(element) {
