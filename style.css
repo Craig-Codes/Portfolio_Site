@@ -920,6 +920,7 @@ footer div {
 
   .fa-chevron-down {
     font-size: 1rem;
+    margin-left: 0px;
   }
 
   #columnOne {
@@ -1084,6 +1085,7 @@ footer div {
 
   .fa-chevron-down {
     font-size: 1.5rem;
+    margin-left: -1px;
   }
 
   #columnOne {
@@ -1226,6 +1228,7 @@ footer div {
 
   .fa-chevron-down {
     font-size: 2rem;
+    margin-left: -2px;
   }
 
   .page-container-row {
@@ -1398,6 +1401,7 @@ footer div {
 
   .fa-chevron-down {
     font-size: 2.5rem;
+    margin-left: -3px;
   }
 
   #columnOne {
