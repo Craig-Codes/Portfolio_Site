@@ -256,7 +256,7 @@ a {
   color: var(--text-color);
   bottom: 10px;
   font-size: 2rem;
-  margin-left: -5px;
+  margin-left: -3px;
   cursor: pointer;
   position: absolute;
 }
