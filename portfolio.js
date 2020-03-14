@@ -1,19 +1,18 @@
-// Preloader
+// Preloader - add to page then fade out an remove on page load complete
 $("body").append(
   '<div style="" id="loadingDiv"><img class="loader" src="/imgs/preloader.gif" alt="Loading..."></div>'
 );
 $(window).on("load", function() {
-  setTimeout(removeLoader, 500); //wait for page load PLUS half a second.
+  setTimeout(removeLoader, 500);
 });
 function removeLoader() {
   $("#loadingDiv").fadeOut(500, function() {
-    // fadeOut complete. Remove the loading div
-    $("#loadingDiv").remove(); //makes page more lightweight
+    $("#loadingDiv").remove();
   });
 }
 
+// Navbar
 let clicked = false;
-
 const openNavButton = document.querySelector(".nav-expand-button");
 const closeNavButton = document.querySelector(".nav-close-button");
 const navIcon = document.querySelector(".nav-icon");
@@ -27,7 +26,6 @@ listButtons.forEach(function(btn) {
 
 function navExpand() {
   if (!clicked) {
-    console.log("clicked");
     document.getElementById("navbar").style.width = "50%";
     navIcon.className = "nav-expand-button nav-icon nav-icon-open";
     clicked = true;
@@ -44,14 +42,12 @@ function closeNav() {
 }
 
 // Code deals with move down from intro page
-
 const introDown = document.querySelector("#moveDown");
 introDown.addEventListener("click", function() {
   location.href = "#about-page";
 });
 
 // Code to deal with knowing when a div is in the viewport to trigger a CSS Keyframe animation. Uses the jquery library to help out.
-
 function isOnScreen(element) {
   var curPos = element.offset();
   var curTop = curPos.top;
@@ -59,9 +55,9 @@ function isOnScreen(element) {
   return curTop > screenHeight ? false : true;
 }
 
+// Functions trigger when certain elements appear in the viewport - Interval so that function is constantly looking
 setInterval(animateOnView, 500);
 
-// Functions trigger when certain elements appear in the viewport
 function animateOnView() {
   if (isOnScreen($("#about-underline"))) {
     $("#about-underline").animate(
@@ -93,10 +89,8 @@ function animateOnView() {
 }
 
 // Dealing with theme change between light and dark
-
 const html = document.getElementsByTagName("html")[0];
 const typeWriterText = document.querySelector(".typewriter");
-
 const lightModeButton = document.getElementById("light-mode");
 const darkModeButton = document.getElementById("dark-mode");
 
@@ -160,5 +154,4 @@ function darkMode() {
   particlesJS.load("particles-js", "/assets/particles_dark.json", function() {
     console.log("callback - particles.dark.js config loaded");
   });
-  $();
 }
