@@ -114,7 +114,7 @@ function lightMode() {
   html.style.setProperty("--white", "white");
   html.style.setProperty("--nav-button", "rgba(0, 0, 0, 0.6)");
   html.style.setProperty("--nav-color", "rgba(255, 255, 255, 0.9)");
-  html.style.setProperty("--font-weight", "bold");
+  //html.style.setProperty("--font-weight", "bold");
   html.style.setProperty("--background-gradient", "rgba(255, 255, 255, 0.4)");
   html.style.setProperty("--card-background", "#f1f1f1");
   html.style.setProperty("--projects-shadow", "#424242");
@@ -138,7 +138,7 @@ function darkMode() {
   html.style.setProperty("--white", "black");
   html.style.setProperty("--nav-button", "rgba(255, 255, 255, 0.6)");
   html.style.setProperty("--nav-color", "rgba(0, 0, 0, 0.85)");
-  html.style.setProperty("--font-weight", "normal");
+  // html.style.setProperty("--font-weight", "normal");
   html.style.setProperty("--background-gradient", "rgba(0, 0, 0, 0.87)");
   html.style.setProperty("--card-background", "#2d2d2e");
   html.style.setProperty("--projects-shadow", "#1a1110");
