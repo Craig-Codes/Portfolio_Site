@@ -882,7 +882,6 @@ a {
 }
 
 .info {
-  margin-top: 20%;
   letter-spacing: 0.25rem;
   text-align: left;
   padding-left: 5%;
@@ -1131,7 +1130,7 @@ footer div {
     font-size: 0.45rem;
   }
   .info {
-    margin-top: 25%;
+    margin-top: 10%;
   }
 
   .weblinks {
@@ -1281,7 +1280,7 @@ footer div {
   }
 
   .info {
-    margin-top: 25%;
+    margin-top: 15%;
   }
 
   .weblinks {
@@ -1462,7 +1461,7 @@ footer div {
   }
 
   .info {
-    margin-top: 17%;
+    margin-top: 12%;
   }
 
   .weblinks {
