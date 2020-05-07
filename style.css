@@ -14,6 +14,7 @@ body {
   color: var(--text-color);
   justify-content: center;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.3rem;
 }
 
 strong {
@@ -24,6 +25,10 @@ h1 {
   font-size: 3.5rem;
   margin-bottom: 10%;
   color: var(--text-color);
+}
+
+h2{
+  padding-bottom: 7px;
 }
 
 a {
@@ -88,16 +93,17 @@ a {
 .nav-list {
   border-top: 3px solid #444;
   padding-top: 30px;
+  padding-left: 0px;
   margin-top: 7%;
   border-bottom: 3px solid #444;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   list-style-type: none;
   text-align: center;
 }
 
 /* The sidepanel links */
 .nav a {
-  padding: 8px 8px 8px 32px;
+  padding: 15px 15px 15px 15px;
   text-decoration: none;
   font-size: 25px;
   color: var(--text-color);
@@ -141,20 +147,25 @@ a {
   justify-content: center;
 }
 
-#light-mode {
+#mode-toggle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.4rem;
+  width: 100%;
   cursor: pointer;
+}
+
+#mode-toggle i{
+  padding: 10px 0px 0px 15px;
+}
+
+#light-mode {
   color: orange;
-  font-size: 1.5rem;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 2px;
 }
 
 #dark-mode {
-  cursor: pointer;
   color: grey;
-  font-size: 1.5rem;
-  margin-left: 10px;
 }
 
 /* Introduction Page */
@@ -198,6 +209,7 @@ a {
 }
 
 .typewriter h2 {
+  padding-top: 5px;
   font-size: 2rem;
   color: var(--text-color);
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -209,7 +221,7 @@ a {
   -webkit-animation: typing 4s steps(40, end),
     blink-caret 0.75s step-end infinite;
   -moz-animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-  animation-delay: 750ms; /* Delay the animation a little to account for page loading time */
+  animation-delay: 1000ms; /* Delay the animation a little to account for page loading time */
 }
 
 /* The typing effect */
@@ -252,15 +264,21 @@ a {
   }
 }
 
+.expand{
+    transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
 .expand:hover,
 .expand:hover {
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   color: grey;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
   cursor: hand;
 }
 
@@ -278,7 +296,7 @@ a {
   color: var(--white);
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 7px 0;
 
   /* Position the tooltip */
   position: absolute;
@@ -291,7 +309,7 @@ a {
 
 .tooltip .tooltiptext {
   width: 120px;
-  top: 120%;
+  top: 140%;
   left: 50%;
   margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
@@ -508,11 +526,6 @@ a {
   transition: all 600ms ease;
 }
 
-.cards a:hover,
-.cards a:focus {
-  color: grey;
-}
-
 .cards:hover a {
   color: var(--text-color);
 }
@@ -571,24 +584,14 @@ a {
 #align-right {
   float: right;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: right;
 }
 
 #align-right i {
-  margin-right: 10px;
+  margin-right: 2px;
+  margin-top: 5px;
   transition: all 600ms ease;
-}
-
-#align-right i:hover,
-#align-right i:focus {
-  transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  color: var(--text-color);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
 }
 
 .cards:hover,
@@ -609,7 +612,7 @@ a {
   top: 52px;
   left: 2%;
   height: 2px;
-  width: 75%;
+  width: 76.5%;
   transition: all 700ms;
   -webkit-transition: all 700ms;
   -moz-transition: all 700ms;
@@ -632,6 +635,41 @@ a {
   -webkit-transition: 0.6s ease-out;
   -moz-transition: 0.6s ease-out;
 }
+
+.tooltipProjects {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipProjects .tooltiptext {
+  overflow: visible;
+  visibility: hidden;
+  width: auto;
+  background-color: var(--text-color);
+  font-size: 0.8rem;
+  color: var(--white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 999;
+}
+
+.tooltipProjects:hover .tooltiptext {
+  visibility: visible;
+  z-index: 999;
+}
+
+.tooltipProjects .tooltiptext {
+  width: auto;
+  top: 120%;
+  left: 50%;
+  z-index: 999;
+  margin-left: -50px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
 
 /* Technologies Page */
 
@@ -1018,6 +1056,10 @@ footer div {
     width: 80%;
   }
 
+  .tooltipProjects .tooltiptext {
+    font-size: 0.7rem;
+  }
+
   .project-text h2 {
     font-size: 1rem;
   }
@@ -1184,6 +1226,10 @@ footer div {
     font-size: 0.8rem;
   }
 
+  .tooltipProjects .tooltiptext {
+    font-size: 0.8rem;
+  }
+
   .project-text h2 {
     font-size: 1.1rem;
   }
@@ -1344,6 +1390,10 @@ footer div {
   }
 
   .project-text {
+    font-size: 0.9rem;
+  }
+
+  .tooltipProjects .tooltiptext {
     font-size: 0.9rem;
   }
 
@@ -1753,6 +1803,10 @@ footer div {
   }
 
   .project-text {
+    font-size: 1rem;
+  }
+
+  .tooltipProjects .tooltiptext {
     font-size: 1rem;
   }
 
