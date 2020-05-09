@@ -2,11 +2,11 @@
 $("body").append(
   '<div style="" id="loadingDiv"><img class="loader" src="/imgs/preloader.gif" alt="Loading..."></div>'
 );
-$(window).on("load", function() {
+$(window).on("load", function () {
   setTimeout(removeLoader, 500);
 });
 function removeLoader() {
-  $("#loadingDiv").fadeOut(500, function() {
+  $("#loadingDiv").fadeOut(500, function () {
     $("#loadingDiv").remove();
   });
 }
@@ -20,7 +20,7 @@ const navIcon = document.querySelector(".nav-icon");
 openNavButton.addEventListener("click", navExpand);
 
 const listButtons = document.querySelectorAll(".nav-link");
-listButtons.forEach(function(btn) {
+listButtons.forEach(function (btn) {
   btn.addEventListener("click", closeNav);
 });
 
@@ -43,7 +43,7 @@ function closeNav() {
 
 // Code deals with move down from intro page
 const introDown = document.querySelector("#moveDown");
-introDown.addEventListener("click", function() {
+introDown.addEventListener("click", function () {
   location.href = "#about-page";
 });
 
@@ -127,9 +127,10 @@ function lightMode() {
   );
   html.style.setProperty("--footer-border", "black");
   closeNav();
-  particlesJS.load("particles-js", "/assets/particles.json", function() {
+  particlesJS.load("particles-js", "/assets/particles.json", function () {
     console.log("callback - particles.light.js config loaded");
   });
+  document.getElementById("ionic").src = "./imgs/ionic_black.png";
 }
 
 function darkMode() {
@@ -151,7 +152,8 @@ function darkMode() {
   );
   html.style.setProperty("--footer-border", "white");
   closeNav();
-  particlesJS.load("particles-js", "/assets/particles_dark.json", function() {
+  particlesJS.load("particles-js", "/assets/particles_dark.json", function () {
     console.log("callback - particles.dark.js config loaded");
   });
+  document.getElementById("ionic").src = "./imgs/ionic_white.png";
 }

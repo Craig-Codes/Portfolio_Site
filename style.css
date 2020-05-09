@@ -1118,9 +1118,9 @@ footer div {
   }
 
   #ionic{
-    margin-top: 8px;
-    width: 90%;
-    margin-left: 6px;
+    margin-top: 12px;
+    width: 80%;
+    margin-left: 8px;
   }
 
   #unity-correction {
@@ -1297,9 +1297,9 @@ footer div {
   }
 
   #ionic{
-    margin-top: 10px;
-    width: 90%;
-    margin-left: 6px;
+    margin-top: 12px;
+    width: 80%;
+    margin-left: 9px;
   }
 
   #unity-correction {
@@ -1483,9 +1483,9 @@ footer div {
   }
 
   #ionic{
-    margin-top: 8px;
-    width: 100%;
-    margin-left: 0;
+    margin-top: 15px;
+    width: 80%;
+    margin-left: 10px;
   }
 
   #unity-correction {
@@ -1646,7 +1646,9 @@ footer div {
   }
 
   #ionic{
-    margin-top: 12px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 6px;
   }
 
   #unity-correction {
@@ -1656,7 +1658,6 @@ footer div {
   #adobe-correction {
     margin-left: 8px;
   }
-
 
   .contact-card {
     width: 45%;
@@ -1805,7 +1806,9 @@ footer div {
   }
 
   #ionic{
-    margin-top: 13px;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 12px;
   }
 
   #unity-correction {
@@ -1814,6 +1817,11 @@ footer div {
 
   #adobe-correction {
     margin-left: 10px;
+  }
+
+  #git-correction {
+    margin-left: 10px;
+    margin-top: 22px;
   }
 
   .contact-card {
@@ -1937,7 +1945,9 @@ footer div {
   }
 
   #ionic{
-    margin-top: 10px;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 8px;
   }
 
   #unity-correction {
@@ -1946,6 +1956,11 @@ footer div {
 
   #adobe-correction {
     margin-left: 8px;
+  }
+
+  #git-correction {
+    margin-left: 6px;
+    margin-top: 18px;
   }
 
   .contact-card {
