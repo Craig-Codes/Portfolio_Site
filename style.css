@@ -724,6 +724,11 @@ a {
   margin-left: 8px;
 }
 
+#ionic{
+  margin-top: 15px;
+  width: 100%
+}
+
 .carousel-cards:hover,
 .carousel-cards:focus {
   transform: translateY(-20px);
@@ -1101,18 +1106,29 @@ footer div {
     font-size: 0.7rem;
   }
 
+  .carousel-cards {
+    height: 120px;
+    width: 85px;
+  }
+
   .carousel-cards i {
-    font-size: 3.5rem;
-    margin-top: 15px;
+    font-size: 3rem;
+    margin-top: 12px;
     margin-left: 13px;
   }
 
+  #ionic{
+    margin-top: 8px;
+    width: 90%;
+    margin-left: 6px;
+  }
+
   #unity-correction {
-    margin-left: 3px;
+    margin-left: 10px;
   }
 
   #adobe-correction {
-    margin-left: 8px;
+    margin-left: 12px;
   }
 
   .contact-card {
@@ -1262,6 +1278,36 @@ footer div {
 
   .carousel-cards h3 {
     font-size: 0.7rem;
+  }
+
+  .carousel-cards {
+    height: 130px;
+    width: 90px;
+  }
+
+  .carousel-cards h3 {
+    margin-left: 5%;
+    font-size: 0.8rem;
+  }
+
+  .carousel-cards i {
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-left: 16px;
+  }
+
+  #ionic{
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 6px;
+  }
+
+  #unity-correction {
+    margin-left: 10px;
+  }
+
+  #adobe-correction {
+    margin-left: 14px;
   }
 
   .contact-card {
@@ -1421,8 +1467,8 @@ footer div {
   }
 
   .carousel-cards {
-    height: 195px;
-    width: 150px;
+    height: 140px;
+    width: 100px;
   }
 
   .carousel-cards h3 {
@@ -1431,17 +1477,23 @@ footer div {
   }
 
   .carousel-cards i {
-    font-size: 7rem;
+    font-size: 4rem;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 12px;
+  }
+
+  #ionic{
+    margin-top: 8px;
+    width: 100%;
+    margin-left: 0;
   }
 
   #unity-correction {
-    margin-left: 3px;
+    margin-left: 6px;
   }
 
   #adobe-correction {
-    margin-left: 8px;
+    margin-left: 10px;
   }
 
   .contact-card {
@@ -1582,6 +1634,30 @@ footer div {
     width: 80%;
   }
 
+  .carousel-cards {
+    height: 160px;
+    width: 110px;
+  }
+
+  .carousel-cards i {
+    font-size: 5rem;
+    margin-top: 18px;
+    margin-left: 8px;
+  }
+
+  #ionic{
+    margin-top: 12px;
+  }
+
+  #unity-correction {
+    margin-left: 3px;
+  }
+
+  #adobe-correction {
+    margin-left: 8px;
+  }
+
+
   .contact-card {
     width: 45%;
     height: 300px;
@@ -1713,6 +1789,33 @@ footer div {
     font-size: 0.9rem;
   }
 
+  .project-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-cards {
+    height: 170px;
+    width: 120px;
+  }
+
+  .carousel-cards i {
+    font-size: 5rem;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  #ionic{
+    margin-top: 13px;
+  }
+
+  #unity-correction {
+    margin-left: 6px;
+  }
+
+  #adobe-correction {
+    margin-left: 10px;
+  }
+
   .contact-card {
     width: 41%;
     height: 315px;
@@ -1815,6 +1918,34 @@ footer div {
 
   .project-text h3 {
     font-size: 1.1rem;
+  }
+
+  .carousel-cards {
+    height: 180px;
+    width: 130px;
+  }
+
+  .carousel-cards h3 {
+    margin-left: 5%;
+    font-size: 0.8rem;
+  }
+
+  .carousel-cards i {
+    font-size: 6rem;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  #ionic{
+    margin-top: 10px;
+  }
+
+  #unity-correction {
+    margin-left: 3px;
+  }
+
+  #adobe-correction {
+    margin-left: 8px;
   }
 
   .contact-card {
