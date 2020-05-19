@@ -1986,3 +1986,9 @@ footer div {
     padding: 1%;
   }
 }
+
+@media only screen and (min-width: 2150px) {
+  .info {
+    margin-top: 18%;
+  }
+}
