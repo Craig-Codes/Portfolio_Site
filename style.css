@@ -781,7 +781,7 @@ a {
       var(--background-gradient-contact),
       var(--background-gradient-contact)
     ),
-    url(imgs/contact.jpeg);
+    url(imgs/contact.jpg);
   background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

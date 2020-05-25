@@ -102,7 +102,6 @@ if (
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
 ) {
-  console.log("dark mode");
   darkMode();
 } else {
   lightMode();
@@ -128,7 +127,6 @@ function lightMode() {
   html.style.setProperty("--footer-border", "black");
   closeNav();
   particlesJS.load("particles-js", "/assets/particles.json", function () {
-    console.log("callback - particles.light.js config loaded");
   });
   document.getElementById("ionic").src = "./imgs/ionic_black.png";
 }
@@ -153,7 +151,6 @@ function darkMode() {
   html.style.setProperty("--footer-border", "white");
   closeNav();
   particlesJS.load("particles-js", "/assets/particles_dark.json", function () {
-    console.log("callback - particles.dark.js config loaded");
   });
   document.getElementById("ionic").src = "./imgs/ionic_white.png";
 }
