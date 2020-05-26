@@ -1,7 +1,4 @@
-// Preloader - add to page then fade out an remove on page load complete
-$("body").append(
-  '<div style="" id="loadingDiv"><img class="loader" src="/imgs/preloader.gif" alt="Loading..."></div>'
-);
+// Preloader - remove on page load complete
 $(window).on("load", function () {
   setTimeout(removeLoader, 500);
 });
@@ -83,9 +80,9 @@ function animateOnView() {
       "slow"
     );
   }
-  if (isOnScreen($("#about_image"))) {
-    $("#columnTwo img").animate({ width: "100%" }, "slow");
-  }
+  // if (isOnScreen($("#about_image"))) {
+  //   $("#columnTwo img").animate({ width: "100%" }, "slow");
+  // }
 }
 
 // Dealing with theme change between light and dark
@@ -128,7 +125,7 @@ function lightMode() {
   closeNav();
   particlesJS.load("particles-js", "/assets/particles.json", function () {
   });
-  document.getElementById("ionic").src = "./imgs/ionic_black.png";
+  //document.getElementById("ionic").src = "./imgs/ionic_black.png";
 }
 
 function darkMode() {
@@ -152,5 +149,5 @@ function darkMode() {
   closeNav();
   particlesJS.load("particles-js", "/assets/particles_dark.json", function () {
   });
-  document.getElementById("ionic").src = "./imgs/ionic_white.png";
+ // document.getElementById("ionic").src = "./imgs/ionic_white.png";
 }
