@@ -1,0 +1,297 @@
+/*!
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+
+  .fa-linkedin:before {
+    content: "\f08c"; }
+  
+  .fa-linkedin-in:before {
+    content: "\f0e1"; }
+
+  .fa-android:before {
+    content: "\f17b"; }
+
+  .fa-ellipsis-v:before {
+    content: "\f142"; }
+   
+  .fa-globe-americas:before {
+    content: "\f57d"; }
+
+  .fa-moon:before {
+    content: "\f186"; }
+  
+  .fa-html5:before {
+    content: "\f13b"; }
+  
+  .fa-sun:before {
+   content: "\f185"; }
+
+  .fa-js:before {
+    content: "\f3b8"; }
+  
+  .fa-js-square:before {
+    content: "\f3b9"; }
+
+  .fa-windows:before {
+    content: "\f17a"; }
+
+  .fa-vr-cardboard:before {
+    content: "\f729"; }
+      
+  .fa-vuejs:before {
+    content: "\f41f"; }
+
+        
+  .fa-adobe:before {
+    content: "\f778"; }
+
+  .fa-discord:before {
+    content: "\f392"; }
+
+  .fa-unity:before {
+    content: "\f949"; }
+
+  .fa-angular:before {
+    content: "\f420"; }
+
+  .fa-apple:before {
+    content: "\f179"; }
+
+  .fa-apple-alt:before {
+    content: "\f5d1"; }
+
+  .fa-aws:before {
+    content: "\f375"; }
+
+  .fa-bootstrap:before {
+     content: "\f836"; }
+
+  .fa-chevron-circle-down:before {
+    content: "\f13a"; }
+
+  .fa-chevron-circle-left:before {
+    content: "\f137"; }
+
+  .fa-chevron-circle-right:before {
+    content: "\f138"; }
+
+  .fa-chevron-circle-up:before {
+    content: "\f139"; }
+
+  .fa-chevron-down:before {
+    content: "\f078"; }
+
+  .fa-chevron-left:before {
+    content: "\f053"; }
+
+  .fa-chevron-right:before {
+    content: "\f054"; }
+
+  .fa-chevron-up:before {
+   content: "\f077"; }
+
+  .fa-chrome:before {
+    content: "\f268"; }
+
+  .fa-code:before {
+   content: "\f121"; }
+
+  .fa-code-branch:before {
+    content: "\f126"; }
+
+  .fa-css3:before {
+     content: "\f13c"; }
+
+  .fa-css3-alt:before {
+    content: "\f38b"; }
+
+  .fa-dochub:before {
+    content: "\f394"; }
+
+  .fa-docker:before {
+    content: "\f395"; }
+
+  .fa-dribbble:before {
+    content: "\f17d"; }
+
+  .fa-dribbble-square:before {
+    content: "\f397"; }
+
+
+  .fa-drupal:before {
+    content: "\f1a9"; }
+
+  .fa-envelope:before {
+   content: "\f0e0"; }
+
+  .fa-envelope-open:before {
+    content: "\f2b6"; }
+
+  .fa-envelope-open-text:before {
+    content: "\f658"; }
+
+  .fa-envelope-square:before {
+    content: "\f199"; }
+
+
+  .fa-facebook:before {
+    content: "\f09a"; }
+
+  .fa-facebook-f:before {
+    content: "\f39e"; }
+
+  .fa-facebook-messenger:before {
+    content: "\f39f"; }
+
+  .fa-facebook-square:before {
+    content: "\f082"; }
+
+  .fa-flask:before {
+    content: "\f0c3"; }
+
+  .fa-git:before {
+    content: "\f1d3"; }
+
+  .fa-git-alt:before {
+    content: "\f841"; }
+
+  .fa-git-square:before {
+    content: "\f1d2"; }
+
+  .fa-github:before {
+    content: "\f09b"; }
+
+  .fa-github-alt:before {
+    content: "\f113"; }
+
+  .fa-github-square:before {
+    content: "\f092"; }
+
+  .fa-google:before {
+    content: "\f1a0"; }
+
+  .fa-google-drive:before {
+    content: "\f3aa"; }
+
+  .fa-google-play:before {
+    content: "\f3ab"; }
+
+  .fa-google-plus:before {
+    content: "\f2b3"; }
+
+  .fa-google-plus-g:before {
+    content: "\f0d5"; }
+
+  .fa-google-plus-square:before {
+    content: "\f0d4"; }
+
+  .fa-google-wallet:before {
+    content: "\f1ee"; }
+
+  .fa-grunt:before {
+    content: "\f3ad"; }
+
+  .fa-guitar:before {
+    content: "\f7a6"; }
+
+  .fa-gulp:before {
+    content: "\f3ae"; }
+
+  .fa-headset:before {
+    content: "\f590"; }
+
+  .fa-node:before {
+    content: "\f419"; }
+
+  .fa-node-js:before {
+    content: "\f3d3"; }
+
+  .fa-npm:before {
+    content: "\f3d4"; }
+
+  .fa-python:before {
+    content: "\f3e2"; }
+
+  .fa-git:before {
+    content: "\f1d3"; }
+  
+  .fa-git-alt:before {
+    content: "\f841"; }
+  
+  .fa-git-square:before {
+    content: "\f1d2"; }
+  
+  .fa-github:before {
+    content: "\f09b"; }
+  
+  .fa-github-alt:before {
+    content: "\f113"; }
+  
+  .fa-github-square:before {
+    content: "\f092"; }
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }

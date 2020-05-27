@@ -1624,7 +1624,7 @@ footer div {
   }
 
   .skills {
-    top: 200px;
+    top: 220px;
 }
 
   .cards img {
@@ -1664,7 +1664,7 @@ footer div {
 
 .skills .title {
   margin-top: 10px;
-  font-size: 0.7rem;
+  font-size: 0.59rem;
 }
 
 .skills i {
@@ -1673,7 +1673,7 @@ footer div {
 }
 
 .skills .skills-container .side div p {
-  font-size: 0.7rem;
+  font-size: 0.59rem;
 }
 
 #ionic{
@@ -1808,6 +1808,10 @@ footer div {
     height: 420px;
   }
 
+  .skills {
+    top: 190px;
+}
+
 .skills .skills-container {
   width: 85%;
 }
@@ -1936,7 +1940,7 @@ footer div {
     display: flex;
     justify-content: center;
     align-self: start;
-    width: 35%;
+    width: 45%;
     padding-right: 0%;
     padding-top: 10px;
     padding-bottom: 25px;
@@ -1967,6 +1971,10 @@ footer div {
   width: 85%;
 }
 
+.skills {
+  top: 170px;
+}
+
 .skills .title {
   margin-top: 10px;
   font-size: 1rem;
@@ -1983,7 +1991,7 @@ footer div {
 
 #ionic{
   height: 70px;
-  top: 95px;
+  top: 85px;
 }
 
 
@@ -2109,6 +2117,10 @@ footer div {
     height: 550px;
   }
 
+  .skills {
+    top: 140px;
+}
+
   .skills .skills-container {
     height: 60%;
   }
@@ -2137,7 +2149,7 @@ footer div {
 
 #ionic{
   height: 70px;
-  top: 95px;
+  top: 87px;
 }
 
   .contact-card {
@@ -2283,6 +2295,10 @@ footer div {
   height: 500px;
 }
 
+.skills {
+  top: 160px;
+}
+
 .skills .skills-container {
   width: 85%;
 }
@@ -2414,7 +2430,7 @@ footer div {
   
 
   .skills {
-    top: 135px;
+    top: 150px;
 }
 
   .skills .title {
@@ -2463,6 +2479,9 @@ footer div {
     margin-top: 18%;
   }
 
+  #columnTwo {
+    width: 20%;
+  }
 
 .skills .title{
   font-size: 1rem;
