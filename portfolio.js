@@ -47,46 +47,7 @@ introDown.addEventListener("click", function () {
   location.href = "#about-page";
 });
 
-// // Code to deal with knowing when a div is in the viewport to trigger a CSS Keyframe animation. Uses the jquery library to help out.
-// function isOnScreen(element) {
-//   var curPos = element.offset();
-//   var curTop = curPos.top;
-//   var screenHeight = $(window).height();
-//   return curTop > screenHeight ? false : true;
-// }
-
-// // Functions trigger when certain elements appear in the viewport - Interval so that function is constantly looking
-// setInterval(animateOnView, 500);
-
-// function animateOnView() {
-//   if (isOnScreen($("#about-underline"))) {
-//     $("#about-underline").animate(
-//       {
-//         width: "100%",
-//       },
-//       "slow"
-//     );
-//   }
-//   if (isOnScreen($("#project-underline"))) {
-//     $("#project-underline").animate(
-//       {
-//         width: "100%",
-//       },
-//       "slow"
-//     );
-//   }
-//   if (isOnScreen($("#tech-underline"))) {
-//     $("#tech-underline").animate(
-//       {
-//         width: "100%",
-//       },
-//       "slow"
-//     );
-//   }
-//   // if (isOnScreen($("#about_image"))) {
-//   //   $("#columnTwo img").animate({ width: "100%" }, "slow");
-//   // }
-// }
+// Code deals with detecting if elements are inside the viewport, adding the .isVisible CSS class when detected to trigger animations
 
 const options = {
   root: null, // use the document's viewport as the container
