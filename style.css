@@ -48,12 +48,57 @@ a {
 }
 
 #about-underline.observed, #project-underline.observed, #tech-underline.observed{
-  transition: 2s;
+  opacity: 1;
+  transition: 1.5s ease-in-out;
 }
 
 #about-underline.observed.isVisible, #project-underline.observed.observed.isVisible, #tech-underline.observed.isVisible{
   width: 100%;
-  transition: 2s;
+}
+
+#about_image.observed{
+  transition: 2s ease-in-out;
+  height: 0%;
+  width: 0%;
+}
+#about_image.observed.isVisible{
+  height: 75%;
+  width: 75%;
+}
+
+.cards.observed{
+ left: -100px;
+ transition-property: transform;
+ transition-duration: 1s;
+}
+
+.cards.observed.isVisible{
+  transform: translateX(100px);
+}
+
+.skills.observed{
+ left: 50%;
+ transition: 1.25s ease-in-out;
+}
+
+.skills.observed.isVisible{
+  left: 0%;
+}
+
+.content.observed{
+  opacity: 1;
+  transition: 1s ease-in-out;
+ top: 75%
+}
+
+.content.observed.isVisible{
+ top: 0%;
+}
+
+/* Stop Transition animations on page resize */
+
+body.stop-transition .observed {
+  transition: none !important;
 }
 
 /* NAV */
@@ -86,6 +131,7 @@ a {
   -webkit-transition: transform 350ms linear;
   -moz-transition: transform 350ms linear;
 }
+
 
 .nav-icon-close {
   transform: rotate(0deg);
@@ -437,7 +483,7 @@ a {
   padding-right: 5%;
 }
 
-#columnTwo img {
+#about_image {
   height: 75%;
   width: 75%;
   border: 3px solid grey;
@@ -509,9 +555,9 @@ a {
   color: var(--text-color);
   border-radius: 10px;
   margin-bottom: 1%;
-  transition: 0.4s ease-out;
-  -webkit-transition: 0.4s ease-out;
-  -moz-transition: 0.4s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
   position: relative;
   left: 0px;
   -moz-box-shadow: 0px 0px 2px 0px var(--projects-shadow);
@@ -1359,7 +1405,7 @@ a {
   width: 35%;
   height: 350px;
   margin-top: 5%;
-  perspective: 675px;
+  perspective: 1000px;
 }
 
 .content {
@@ -1717,6 +1763,15 @@ footer div {
   .contact_back {
     font-size: 0.45rem;
   }
+
+  #contact {
+    background-image: linear-gradient(
+        var(--background-gradient-contact),
+        var(--background-gradient-contact)
+      ),
+      url(imgs/contact-mobile.jpg);
+  }
+
   .info {
     margin-top: 10%;
   }
@@ -2188,6 +2243,14 @@ footer div {
 
   #contact-front {
     font-size: 1rem;
+  }
+
+  #contact {
+    background-image: linear-gradient(
+        var(--background-gradient-contact),
+        var(--background-gradient-contact)
+      ),
+      url(imgs/contact.jpg);
   }
 
   .info {

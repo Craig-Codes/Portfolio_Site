@@ -35,6 +35,7 @@ function navExpand() {
   }
 }
 
+
 function closeNav() {
   document.getElementById("navbar").style.width = "0";
   navIcon.className = "nav-expand-button nav-icon nav-icon-close";
@@ -57,8 +58,7 @@ const options = {
 
 let callback = (entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
-    // If entry (box) is visible - according with the params set in `options`
+    // If entry (element) is visible - according with the params set in `options`
     // then adds `isVisible` class to box
     // otherwise removes `isVisible` class
     if (entry.isIntersecting) {
@@ -103,7 +103,7 @@ function lightMode() {
   html.style.setProperty("--background-color", "#f1f1f1");
   html.style.setProperty("--white", "white");
   html.style.setProperty("--nav-button", "rgba(0, 0, 0, 0.6)");
-  html.style.setProperty("--nav-color", "rgba(255, 255, 255, 0.9)");
+  html.style.setProperty("--nav-color", "rgba(241, 241, 241, 0.95)");
   html.style.setProperty("--background-gradient", "rgba(255, 255, 255, 0.4)");
   html.style.setProperty("--card-background", "#f1f1f1");
   html.style.setProperty("--projects-shadow", "#424242");
@@ -124,7 +124,7 @@ function darkMode() {
   html.style.setProperty("--background-color", "#1b1b1b");
   html.style.setProperty("--white", "black");
   html.style.setProperty("--nav-button", "rgba(255, 255, 255, 0.6)");
-  html.style.setProperty("--nav-color", "rgba(0, 0, 0, 0.85)");
+  html.style.setProperty("--nav-color", "rgba(27, 27, 27, 0.95)");
   html.style.setProperty("--background-gradient", "rgba(0, 0, 0, 0.87)");
   html.style.setProperty("--card-background", "#2d2d2e");
   html.style.setProperty("--projects-shadow", "#1a1110");
@@ -138,4 +138,25 @@ function darkMode() {
   html.style.setProperty("--footer-border", "white");
   closeNav();
   particlesJS.load("particles-js", "/assets/particles_dark.json");
+}
+
+// Stop the transition aniamtions for triggering during a page re-size.
+window.addEventListener("resize", stopTransitionAnimations);
+
+// Funtion triggers on a page resize, adding the css .stop-transition class to body elements. A timer is then used to remove this class after a small amount of time, so that the effects work again
+function stopTransitionAnimations() {
+  const classes = document.body.classList;
+  let timer = null;
+  window.addEventListener('resize', function () {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    } else {
+      classes.add('stop-transition');
+    }
+    timer = setTimeout(() => {
+      classes.remove('stop-transition');
+      timer = null;
+    }, 100);
+  });
 }
