@@ -1,6 +1,6 @@
 // Pre-Loader Code
 window.addEventListener("load", () => {
-  setTimeout(removeLoader, 500);
+  setTimeout(removeLoader, 1000);
 });
 
 function removeLoader() {
@@ -34,7 +34,6 @@ function navExpand() {
     clicked = false;
   }
 }
-
 
 function closeNav() {
   document.getElementById("navbar").style.width = "0";
@@ -77,7 +76,6 @@ let observer = new IntersectionObserver(callback, options);
 document.querySelectorAll(".observed").forEach((element) => {
   observer.observe(element);
 });
-
 
 // Dealing with theme change between light and dark
 const html = document.getElementsByTagName("html")[0];
@@ -147,15 +145,15 @@ window.addEventListener("resize", stopTransitionAnimations);
 function stopTransitionAnimations() {
   const classes = document.body.classList;
   let timer = null;
-  window.addEventListener('resize', function () {
+  window.addEventListener("resize", function () {
     if (timer) {
       clearTimeout(timer);
       timer = null;
     } else {
-      classes.add('stop-transition');
+      classes.add("stop-transition");
     }
     timer = setTimeout(() => {
-      classes.remove('stop-transition');
+      classes.remove("stop-transition");
       timer = null;
     }, 100);
   });

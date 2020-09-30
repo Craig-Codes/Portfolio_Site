@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300' rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
   <link rel="shortcut icon" type="image/jpg" href="imgs/MyFamily.png" alt="me coding on laptop">
   <title>Craig Adam | Portfolio</title>
 </head>
@@ -19,7 +19,6 @@
   <div class="nav-expand-button nav-icon"><i class="fas fa-ellipsis-v"></i></div>
   <nav id="navbar" class="nav">
     <ul class="nav-list">
-      <div id="nav-icon"></div>
       <li>
         <a class="nav-link" href="#introduction">Home</a>
       </li>
@@ -82,16 +81,21 @@
       <h2 id="about-underline" class="underline observed">About me</h2>
       <h3>I'm a Software Developer living in the Shropshire countryside with my fiancée Karen, pug dog Pumpkin and
         siamese cat Pecan.</h3>
-      <p><strong> In 2018 I started training as a Software Developer with the Learning Technologies Team at RAF Cosford.
-          The team build bespoke web-based applications and media, utilised by instructors and trainees at the Defence
-          School of Aeronautical Engineering. I've built and project managed web apps focusing heavily on JavaScript and
-          I've also learned C# and the Unity games engine; with the team increasingly focusing on the 'gamification' of
-          training.</strong></p>
+      <p><strong> 
+        Im currently serving in the RAF where I began a career as an ICT Specailist in 2012, initially focusing on networking and Top Secret systems.
+        <br><br>
+        In 2018 I started training as a Software Developer with the Learning Technologies Team at RAF Cosford.
+          The team build bespoke web-based applications, utilised by instructors and trainees at the Defence
+          School of Aeronautical Engineering. 
+      </br><br>
+        I've built and project managed web apps focusing heavily on JavaScript and
+          I've also learned C# within the Unity games engine; with the team increasingly focusing on the 'gamification' of
+          training. I'm currently taking a Foundation Degree in Computer Science, where I'm focusing on Python, Cloud Computing and Data.</strong></p>
       <p><strong> In my spare time I'm interested in health & fitness, travelling, gaming, coding and binge watching
           Netflix shows.</strong></p>
     </div>
     <div id="columnTwo">
-      <img id="about_image" src="imgs/MyFamily.jpg" alt="photo of myself" class="observed">
+      <img id="about_image" src="imgs/MyFamily.png" alt="photo of myself" class="observed">
     </div>
     </div>
   </section>
@@ -101,13 +105,50 @@
       <div class="white-back">
         <h2 id="project-underline" class="observed"> Projects</h2>
         <h3>A small sample of personal projects.</h3>
-        <p><strong>I have many work-based projects however due to the security implications of my military work they
-            cannot be shown online as code examples. These projects are a small collection of work i've used to develop
-            my skills in various web-based technologies.</strong></p>
+        <p><strong>I have completed countless work-based projects, however due to the security implications of my military work they
+            cannot be shown online as code examples. The projects showcased here are a small collection of projects i've used to develop
+            my skills in various web-based technologies. This list is constantly updated as I learn new skills. Visit my GitHub profile to see far more examples of my personnal projects.</strong></p>
       </div>
     </div>
 
     <div class="card-container">
+
+      <div class="cards observed">
+        <h3>Expenses Tracker PWA</h3>
+        <div id="align-right">
+          <div class="tooltipProjects"><a href="https://play.google.com/store/apps/details?id=com.craigadam.expensestracker"
+            target="_blank"><i class="fab fa-google-play"></i></a><span class="tooltiptext google">Google Play Store</span>
+     </div>
+          <div class="tooltipProjects">
+            <a href="https://github.com/CraigA1987/expenses-tracker-pwa" target="_blank"><i
+                class="fab fa-github"></i></a><span class="tooltiptext">Check Repository</span>
+          </div>
+          <div class="tooltipProjects"><a href="https://expenses-tracker-app-8c5e9.web.app/" target="_blank"><i
+                class="fas fa-globe-americas"></i></a><span class="tooltiptext">View Project</span>
+          </div>
+        </div>
+        <p>Full stack progressive web app allowing users to save and store receipts during business trips or holidays via an android app or the web.
+           Receipts can be photographed directly from the app, or uploaded from device storage and trips can then be saved as a PDF. 
+          <br><br>
+          The app was built using TypeScript with the Angular and Ionic frameworks.
+          This allowed me to pratice using these popular frameworks, with Ionic allowing the app to be built once
+          and pushed out for the web, along with native android and iOS apps.
+        <br> - 2020</p>
+        <img src="imgs/expenses_tracker_all.png" alt="xwing fighter app image">
+        <div class="technology-badges">
+          <i class="devicon-typescript-plain"></i>
+          <i class="devicon-angularjs-plain"></i>
+          <i class="devicon-ionic-original"></i>
+          <i class="devicon-sass-original"></i>
+          <i class="devicon-nodejs-plain"></i>
+          <i class="devicon-mongodb-plain"></i>
+        </div>
+        <div class="card-bar">
+          <div class="empty-card-bar">
+          </div>
+        </div>
+      </div>
+
       <div class="cards observed">
         <h3>Weight Tracker Web App</h3>
         <div id="align-right">
@@ -121,9 +162,10 @@
         </div>
         <p>Full stack web app built to allow users to keep a log of their weight gain or loss. The dashboard dynamically
           displays the users BMI score and a line graph to show data trends over time.
-          This project allowed me to develop my NoSQL database skills, along with a heavy focus on the backend and
-          techniques
-          such as RESTful routing for CRUD functionality.<br> - 2020</p>
+          <br><br>
+          This project was built using Node.js, Express.js, JavaScript and MongoDB.
+          The project allowed me to develop my NoSQL database skills, along with a heavy focus on the backend and
+          techniques such as RESTful routing for CRUD functionality.<br> - 2020</p>
         <img src="imgs/Weight_tracker.png" alt="tracker app image">
         <div class="technology-badges">
           <i class="fab fa-html5"></i>
@@ -149,7 +191,9 @@
                 class="fas fa-globe-americas"></i></a><span class="tooltiptext">View Project</span>
           </div>
         </div>
-        <p>Portfolio website made using HTML5 and CSS3 with a small amount of JavaScript and jQuery for interactivity,
+        <p>Portfolio website used to showcase my software development abilities, and practical skills in various technologies.
+          <br><br>
+          I built the site using HTML5,vCSS3 and JavaScript,
           without any frameworks or UI Kits. I used this project to practice using these fundamental web-technologies,
           whilst focusing on keeping the site clean and responsive.<br> - 2020</p>
         <img src="imgs/portfolio_site.png" alt="portfolio site image">
@@ -157,13 +201,13 @@
           <i class="fab fa-html5"></i>
           <i class="fab fa-css3-alt"></i>
           <i class="fab fa-js-square"></i>
-          <i class="devicon-jquery-plain-wordmark"></i>
         </div>
         <div class="card-bar">
           <div class="empty-card-bar">
           </div>
         </div>
       </div>
+      
 
       <div class="cards observed">
         <h3>Chinook Learning App</h3>
@@ -176,9 +220,11 @@
                 class="fas fa-globe-americas"></i></a><span class="tooltiptext">View Project</span>
           </div>
         </div>
-        <p>Interactive 3D Chinook Helicopter web app using the Unity games Engine and C#. The Aim was to allow users to
-          learn by looking around the Chinook and providing details when different components of the model are
-          selected. Published via WebGl for web compatiblity, allowing easy user access.<br> - 2020</p>
+        <p>Interactive 3D Chinook Helicopter web app to allow users to
+          learn about the helicopter by looking around the Chinook in 3D space and providing details when different components of the model are
+          selected. 
+          <br><br>
+          This project was built in the Unity games Engine using C#. I published via WebGl for web compatiblity, allowing easy user access. This app allowed me to focus on the fundamentals of C# along with the basics of game development utilising the popular Unity engine.<br> - 2020</p>
         <img src="imgs/chinook.png" alt="chinook app image">
         <div class="technology-badges">
           <i class="devicon-csharp-plain-wordmark"></i>
@@ -191,33 +237,7 @@
       </div>
 
       <div class="cards observed">
-        <h3>3D Interactive X-Wing</h3>
-        <div id="align-right">
-          <div class="tooltipProjects">
-            <a href="https://github.com/CraigA1987/Three.js-X-Wing-Demo" target="_blank"><i
-                class="fab fa-github"></i></a><span class="tooltiptext">Check Repository</span>
-          </div>
-          <div class="tooltipProjects"><a href="https://ca-xwing-fighter.netlify.com/" target="_blank"><i
-                class="fas fa-globe-americas"></i></a><span class="tooltiptext">View Project</span>
-          </div>
-        </div>
-        <p>Interactive 3D Starwars X-Wing Starfighter web app using the Three.js JavaScript 3D Library. The Aim was to
-          look at a lighter weight web-based alternative to Unity to showcase products. The model can be viewed in a
-          full 360 degrees and different components can be interacted with.<br> - 2019</p>
-        <img src="imgs/xwing.png" alt="xwing fighter app image">
-        <div class="technology-badges">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js-square"></i>
-        </div>
-        <div class="card-bar">
-          <div class="empty-card-bar">
-          </div>
-        </div>
-      </div>
-
-      <div class="cards observed">
-        <h3>Local Gym Finder</h3>
+        <h3>Local Gym Finder Web App</h3>
         <div id="align-right">
           <div class="tooltipProjects">
             <a href="https://github.com/CraigA1987/Local_Gym_Finder" target="_blank"><i
@@ -227,9 +247,11 @@
                 class="fas fa-globe-americas"></i></a><span class="tooltiptext">View Project</span>
           </div>
         </div>
-        <p>Web app utilising the Bing Maps API and location services. The application takes the users location data and
-          uses it to display local gym locations onto a map. Users can easily change search distance via buttons and
-          JavaScript.<br> - 2019</p>
+        <p>Web app to show a user where their local gyms are based on the users current location.
+          <br><br>
+          The project was built using JavaScript and the Bing Maps API. Location services are used to detect a users location based on GPS location, fetching results from the API based on this location. 
+          Users can click on found pins on the map to discover more information about a gym or sports facility. This project allowed
+          me to practice utilising third party API's and built in browser features.<br> - 2019</p>
         <img src="imgs/gym_finder.png" alt="local gym finder image">
         <div class="technology-badges">
           <i class="fab fa-html5"></i>
@@ -243,7 +265,7 @@
       </div>
 
       <div class="cards observed">
-        <h3>CASIO Calculator</h3>
+        <h3>CASIO Calculator Web App</h3>
         <div id="align-right">
           <div class="tooltipProjects">
             <a href="https://github.com/CraigA1987/JavaScript_Calculator" target="_blank"><i
@@ -253,9 +275,11 @@
                 class="fas fa-globe-americas"></i></a><span class="tooltiptext">View Project</span>
           </div>
         </div>
-        <p>Fully functional interactive JavaScript Calculator, emulating a CASIO Calculator. I made the calculator in
-          Adobe Illustrator and created the product for the web in Adobe Animate. I've used the Adobe Suite extensively
-          in various work-based projects, with this application being a simple example.<br> - 2019</p>
+        <p>
+          This app is a fully functional CASIO calculator. It works exactly the same as the real version, providing the same functionality and error messages.
+          <br><br>
+          I made the calculator in Adobe Illustrator and created the product for the web in Adobe Animate, allowing me to practice utiltising the Adobe Suite. 
+          I've used the Adobe Suite extensively in various work-based projects, with this application being a simple example.<br> - 2019</p>
         <img src="imgs/calculator.png" alt="calculator app image">
         <div class="technology-badges">
           <i class="fab fa-adobe"></i>
@@ -275,9 +299,9 @@
       <h3>A list of technologies used to build, manage, organise and deploy projects.</h3>
       <p>I have used all of these technologies either in work-based, university or personal projects. I have the
         most
-        experience in plain JavaScript; focusing on the fundamentals, allowing me to pick up frameworks, libraries and
+        experience in JavaScript; focusing on the fundamentals, allowing me to pick up frameworks, libraries and
         associated languages quickly.
-        I've also used C# extensively within the Unity games engine, with a focus on 3D and VR applications.
+        I've also used C# extensively within the Unity games engine, with a focus on 3D and VR applications. In addition, i've focused on Python and cloud computing during my university studies.
       </p>
     </div>
     <div class='skills observed'>
@@ -327,8 +351,8 @@
           <div class='flip-4'>
             <div class="toolset-skill">
               <div class="skill-format">
-                <h3 class="title">NPM</h3>
-                <i class="fab fa-npm"></i>
+                <h3 class="title">PyCharm</h3>
+                <i class="devicon-pycharm-plain"></i>
               </div>
             </div>
           </div>
@@ -354,8 +378,8 @@
           <div class='flip-2'>
             <div class="toolset-skill">
               <div class="skill-format">
-                <h3 class="title">PostgreSQL</h3>
-                <i class="devicon-postgresql-plain"></i>
+                <h3 class="title">Sass</h3>
+                <i class="devicon-sass-original"></i>
               </div>
             </div>
           </div>
@@ -542,7 +566,7 @@
             <div class="toolset-skill">
               <div class="skill-format">
                 <h3 class="title">Ionic</h3>
-                <img id="ionic" id="ionic" src="imgs/ionic_white.png"></img>
+                <i class="devicon-ionic-original"></i>
               </div>
             </div>
           </div>
