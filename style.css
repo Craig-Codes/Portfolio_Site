@@ -1393,7 +1393,7 @@ body.stop-transition .observed {
       var(--background-gradient-contact),
       var(--background-gradient-contact)
     ),
-    url(imgs/contact.jpg);
+    url(imgs/contact-mobile.jpg);
   background-attachment: scroll;
   background-size: cover;
   background-position: center; /* Center the image */
@@ -1723,9 +1723,11 @@ footer div {
   .toolset-text h3 {
     font-size: 0.8rem;
   }
+
   .skills .skills-container {
     width: 95%;
     height: 380px;
+    top: 180px;
   }
 
   .skills .skills-container {
@@ -1916,6 +1918,14 @@ footer div {
     top: 75px;
   }
 
+  #contact {
+    background-image: linear-gradient(
+        var(--background-gradient-contact),
+        var(--background-gradient-contact)
+      ),
+      url(imgs/contact-mobile.jpg);
+  }
+
   .contact-card {
     width: 51%;
     height: 260px;
@@ -2080,6 +2090,14 @@ footer div {
     width: 44%;
     height: 280px;
     padding-left: 5%;
+  }
+
+  #contact {
+    background-image: linear-gradient(
+        var(--background-gradient-contact),
+        var(--background-gradient-contact)
+      ),
+      url(imgs/contact-mobile.jpg);
   }
 
   #contact-front {

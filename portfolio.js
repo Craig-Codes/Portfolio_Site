@@ -52,7 +52,7 @@ introDown.addEventListener("click", function () {
 const options = {
   root: null, // use the document's viewport as the container
   rootMargin: "0px", // % or px - offsets added to each side of the intersection
-  threshold: 0.2, // percentage of the target element which is visible
+  threshold: 0.13, // percentage of the target element which is visible
 };
 
 let callback = (entries) => {
