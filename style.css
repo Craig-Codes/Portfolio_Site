@@ -17,6 +17,22 @@ body {
   line-height: 1.3rem;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--nav-button);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color);
+}
+
 strong {
   font-weight: var(--font-weight);
 }

@@ -118,14 +118,14 @@ function lightMode() {
 }
 
 function darkMode() {
-  html.style.setProperty("--text-color", "#f1f1f1");
-  html.style.setProperty("--background-color", "#1b1b1b");
+  html.style.setProperty("--text-color", "#D3D3D3");
+  html.style.setProperty("--background-color", "#121212");
   html.style.setProperty("--white", "black");
   html.style.setProperty("--nav-button", "rgba(255, 255, 255, 0.6)");
-  html.style.setProperty("--nav-color", "rgba(27, 27, 27, 0.95)");
+  html.style.setProperty("--nav-color", "rgba(18, 18, 18, 0.95)");
   html.style.setProperty("--background-gradient", "rgba(0, 0, 0, 0.87)");
-  html.style.setProperty("--card-background", "#2d2d2e");
-  html.style.setProperty("--projects-shadow", "#1a1110");
+  html.style.setProperty("--card-background", "#121212");
+  html.style.setProperty("--projects-shadow", "#D3D3D3");
   html.style.setProperty("--card-bar-empty", "#444");
   html.style.setProperty("--card-bar-full", "grey");
   html.style.setProperty("--card-icons", "#444");
