@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": ["#FFFFFF","#ffffcc","#cce6ff", "#ffe6ff", "#e6ffff"]
     },
     "shape": {
       "type": "star",
