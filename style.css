@@ -1607,8 +1607,7 @@ footer div {
   -moz-transition: opacity 1s;
 }
 
-/* Extra small devices (phones, 550px and down) */
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 300px) {
   h1 {
     font-size: 1.7rem;
   }
@@ -1793,7 +1792,7 @@ footer div {
   }
 
   .info {
-    margin-top: 10%;
+    margin-top: 2%;
   }
 
   .weblinks {
@@ -1803,6 +1802,13 @@ footer div {
   .cards {
     width: 98%;
     margin-bottom: 5%;
+  }
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (min-width: 400px) {
+  .info {
+    margin-top: 10%;
   }
 }
 
