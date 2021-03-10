@@ -503,7 +503,7 @@ body.stop-transition .observed {
 #about_image {
   height: 75%;
   width: 75%;
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
   border-radius: 50%;
 }
 
