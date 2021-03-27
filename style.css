@@ -142,6 +142,10 @@ body.stop-transition .observed {
   font-size: 2rem;
 }
 
+.nav-expand-button > * {
+  pointer-events: none;
+}
+
 /* classes added to nav rotation button to give rotation animation on click */
 .nav-icon-open {
   transform: rotate(-90deg);

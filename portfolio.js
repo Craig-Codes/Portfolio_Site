@@ -12,7 +12,7 @@ function removeLoader() {
 }
 
 // Navbar
-let clicked = false;
+let navClicked = false;
 const openNavButton = document.querySelector(".nav-expand-button");
 const closeNavButton = document.querySelector(".nav-close-button");
 const navIcon = document.querySelector(".nav-icon");
@@ -25,21 +25,38 @@ listButtons.forEach(function (btn) {
 });
 
 function navExpand() {
-  if (!clicked) {
+  if (!navClicked) {
     document.getElementById("navbar").style.width = "50%";
     navIcon.className = "nav-expand-button nav-icon nav-icon-open";
-    clicked = true;
+    navClicked = true;
   } else {
     closeNav();
-    clicked = false;
   }
 }
 
 function closeNav() {
+
   document.getElementById("navbar").style.width = "0";
   navIcon.className = "nav-expand-button nav-icon nav-icon-close";
-  clicked = false;
+  navClicked = false;
+  console.log("navbar width === ", document.getElementById("navbar").style.width);
+  console.log("closing nav");
 }
+
+// Code to auto close navbar if click occurs outside nav bar
+document.addEventListener('click', (e) => {
+  let target = e.target.className;
+  console.log(e);
+  console.log(target);
+  console.log(navClicked);
+
+  if(navClicked && target != 'nav-expand-button nav-icon nav-icon-open'){
+    if(navClicked && target != 'nav'){
+      closeNav();
+    }
+  }
+})
+
 
 // Code deals with move down from intro page
 const introDown = document.querySelector("#moveDown");
@@ -52,7 +69,7 @@ introDown.addEventListener("click", function () {
 const options = {
   root: null, // use the document's viewport as the container
   rootMargin: "0px", // % or px - offsets added to each side of the intersection
-  threshold: 0.13, // percentage of the target element which is visible
+  threshold: 0.01, // percentage of the target element which is visible
 };
 
 let callback = (entries) => {
@@ -97,6 +114,7 @@ if (
 }
 
 function lightMode() {
+  stopTransitionAnimations();
   html.style.setProperty("--text-color", "black");
   html.style.setProperty("--background-color", "#f1f1f1");
   html.style.setProperty("--white", "white");
@@ -118,6 +136,7 @@ function lightMode() {
 }
 
 function darkMode() {
+  stopTransitionAnimations();
   html.style.setProperty("--text-color", "#D3D3D3");
   html.style.setProperty("--background-color", "#121212");
   html.style.setProperty("--white", "black");
@@ -138,23 +157,16 @@ function darkMode() {
   particlesJS.load("particles-js", "/assets/particles_dark.json");
 }
 
-// Stop the transition aniamtions for triggering during a page re-size.
+// Stop the transition animations from triggering during a page re-size.
 window.addEventListener("resize", stopTransitionAnimations);
 
-// Funtion triggers on a page resize, adding the css .stop-transition class to body elements. A timer is then used to remove this class after a small amount of time, so that the effects work again
+// Funtion adds the css .stop-transition class to body elements. This Stops CSS transitions for triggering temporarily
+// A timer is then used to remove this class after a small amount of time, so that the effects work again
 function stopTransitionAnimations() {
   const classes = document.body.classList;
-  let timer = null;
-  window.addEventListener("resize", function () {
-    if (timer) {
-      clearTimeout(timer);
-      timer = null;
-    } else {
-      classes.add("stop-transition");
-    }
-    timer = setTimeout(() => {
-      classes.remove("stop-transition");
-      timer = null;
-    }, 100);
-  });
+  classes.add("stop-transition");
+  timer = setTimeout(() => {
+    classes.remove("stop-transition");
+    timer = null;
+  }, 100);
 }
