@@ -39,17 +39,11 @@ function closeNav() {
   document.getElementById("navbar").style.width = "0";
   navIcon.className = "nav-expand-button nav-icon nav-icon-close";
   navClicked = false;
-  console.log("navbar width === ", document.getElementById("navbar").style.width);
-  console.log("closing nav");
 }
 
 // Code to auto close navbar if click occurs outside nav bar
 document.addEventListener('click', (e) => {
   let target = e.target.className;
-  console.log(e);
-  console.log(target);
-  console.log(navClicked);
-
   if(navClicked && target != 'nav-expand-button nav-icon nav-icon-open'){
     if(navClicked && target != 'nav'){
       closeNav();
