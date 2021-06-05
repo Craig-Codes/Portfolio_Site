@@ -58,6 +58,9 @@ introDown.addEventListener("click", function () {
   location.href = "#about-page";
 });
 
+// Code deals with automatically updating the date in the footer
+document.querySelector("#date").textContent = new Date().getFullYear();
+
 // Code deals with detecting if elements are inside the viewport, adding the .isVisible CSS class when detected to trigger animations
 
 const options = {
