@@ -1416,9 +1416,8 @@ body.stop-transition .observed {
     url(imgs/contact-mobile.jpg);
   height: 100%;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;  
+  background-repeat: no-repeat; /* Do not repeat the image */
   z-index: -1;
 }
 
