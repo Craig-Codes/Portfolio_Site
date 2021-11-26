@@ -1413,11 +1413,12 @@ body.stop-transition .observed {
       var(--background-gradient-contact),
       var(--background-gradient-contact)
     ),
-    url(imgs/contact-mobile.jpg) 0 0;
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+    url(imgs/contact-mobile.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  background-repeat: no-repeat; /* Do not repeat the image */
   z-index: -1;
 }
 
