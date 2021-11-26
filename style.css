@@ -1414,12 +1414,18 @@ body.stop-transition .observed {
       var(--background-gradient-contact)
     ),
     url(imgs/contact-mobile.jpg);
-  height: 100%;
-  width: 100%;
-  background-size: cover;  
-  -webkit-background-size: cover; 
-  background-attachment: scroll;
-  background-repeat: no-repeat; /* Do not repeat the image */
+/* Image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Image doesn't repeat */
+background-repeat: no-repeat;
+
+/* Makes the image fixed in the viewport so that it doesn't move when
+the content height is greater than the image height */
+background-attachment: fixed;
+
+/* This is what makes the background image rescale based on its     container's size */
+background-size: cover;
   z-index: -1;
 }
 
