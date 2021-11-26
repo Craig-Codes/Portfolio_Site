@@ -1416,7 +1416,6 @@ body.stop-transition .observed {
      url(imgs/contact-mobile.jpg);
    background-attachment: scroll;
    background-size: cover;
-  -webkit-background-size: cover;
    background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   z-index: -1;
