@@ -1413,7 +1413,7 @@ body.stop-transition .observed {
       var(--background-gradient-contact),
       var(--background-gradient-contact)
     ),
-    url(imgs/contact-mobile.jpg);
+    url(imgs/contact-mobile.jpg) 0 0;
   background-attachment: scroll;
   background-size: cover;
   background-position: center; /* Center the image */
