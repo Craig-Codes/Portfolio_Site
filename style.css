@@ -1410,13 +1410,13 @@ body.stop-transition .observed {
 /* Contacts Page */
 #contact {
   background-image: linear-gradient(
-       var(--background-gradient-contact),
-       var(--background-gradient-contact)
-     ),
-     url(imgs/contact-mobile.jpg);
-   background-attachment: scroll;
-   background-size: cover;
-   background-position: center; /* Center the image */
+      var(--background-gradient-contact),
+      var(--background-gradient-contact)
+    ),
+    url(imgs/contact-mobile.jpg);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   z-index: -1;
 }
@@ -1465,6 +1465,7 @@ body.stop-transition .observed {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
   -moz-box-shadow: 1px 1px 2px 2px #000;
   -webkit-box-shadow: 1px 1px 2px 2px #000;
   box-shadow: 1px 1px 2px 2px #000;
@@ -1490,6 +1491,16 @@ body.stop-transition .observed {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+}
+
+.contact_front {
+  background: #1b1b1b;
+  color: white;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
 }
 
 .contact_back {
